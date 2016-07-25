@@ -28,5 +28,13 @@
 		</label>
 	</fieldset>
 
+	<fieldset>
+		<legend class="screen-reader-text"><span><?php _e('Remove OEmbed Links', $this->plugin_name);?></span></legend>
+		<label for="<?php echo $this->plugin_name;?>-remove_oembed">
+			<input type="checkbox" id="<?php echo $this->plugin_name;?>-remove_oembed" name="<?php echo $this->plugin_name;?>[remove_oembed]" value="1" <?php checked($remove_oembed, 1);?>/>
+			<span><?php esc_attr_e('Remove OEmbed Links', $this->plugin_name);?></span>
+		</label>
+	</fieldset>
+
 
 </div>

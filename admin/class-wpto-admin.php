@@ -156,6 +156,7 @@ class wpto_Admin {
         //Cleanup
         $valid['css_js_versions'] = (isset($input['css_js_versions']) && !empty($input['css_js_versions'])) ? 1 : 0;
         $valid['wp_version_number'] = (isset($input['wp_version_number']) && !empty($input['wp_version_number'])) ? 1 : 0;
+        $valid['remove_oembed'] = (isset($input['remove_oembed']) && !empty($input['remove_oembed'])) ? 1 : 0;
 
 
 

@@ -18,10 +18,7 @@
  * Text Domain:       wp-theme-optimiser
  * Domain Path:       /languages
  */
- function remove_version_generator() {
- return '';
- }
- add_filter('the_generator', 'remove_version_generator');
+
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
 	die;

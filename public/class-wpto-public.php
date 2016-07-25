@@ -47,7 +47,7 @@ class wpto_Public {
 	public function wpto_remove_cssjs_ver( ) {
 		if(!empty($this->wpto_options['css_js_versions'])){
 			function wpto_remove_cssjs_ver_filter($src ){
-				if( strpos( $src, '?ver=' ) ) $src = remove_query_arg( 'ver', $src );
+				 if( strpos( $src, '?ver=' ) ) $src = remove_query_arg( 'ver', $src );
 				 return $src;
 			}
 			add_filter( 'style_loader_src', 'wpto_remove_cssjs_ver_filter', 10, 2 );
@@ -58,12 +58,35 @@ class wpto_Public {
 	// Remove WP version number
 	public function wpto_remove_wp_version_number( ) {
 		if(!empty($this->wpto_options['wp_version_number'])){
-
-
+			function remove_version_generator() {
+	 	 return '';
+	 	 }
+	 	 add_filter('the_generator', 'remove_version_generator');
 		}
 	}
 
+	// Remove OEmbed
+	public function wpto_remove_oembed( ) {
+		if(!empty($this->wpto_options['remove_oembed'])){
+			function disable_embeds_init() {
 
+    // Remove the REST API endpoint.
+    remove_action('rest_api_init', 'wp_oembed_register_route');
+
+    // Turn off oEmbed auto discovery.
+    // Don't filter oEmbed results.
+    remove_filter('oembed_dataparse', 'wp_filter_oembed_result', 10);
+
+    // Remove oEmbed discovery links.
+    remove_action('wp_head', 'wp_oembed_add_discovery_links');
+
+    // Remove oEmbed-specific JavaScript from the front-end and back-end.
+    remove_action('wp_head', 'wp_oembed_add_host_js');
+}
+
+add_action('init', 'disable_embeds_init', 9999);
+		}
+	}
 
 
 
