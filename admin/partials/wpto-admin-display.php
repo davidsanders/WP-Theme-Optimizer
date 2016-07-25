@@ -26,6 +26,7 @@
       global $menu;
 
 			$css_js_versions = $options['css_js_versions'];
+			$wp_version_number = $options['wp_version_number'];
 
 
 				/*

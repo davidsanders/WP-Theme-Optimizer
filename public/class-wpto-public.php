@@ -47,11 +47,19 @@ class wpto_Public {
 	public function wpto_remove_cssjs_ver( ) {
 		if(!empty($this->wpto_options['css_js_versions'])){
 			function wpto_remove_cssjs_ver_filter($src ){
-				 if( strpos( $src, '?ver=' ) ) $src = remove_query_arg( 'ver', $src );
+				if( strpos( $src, '?ver=' ) ) $src = remove_query_arg( 'ver', $src );
 				 return $src;
 			}
 			add_filter( 'style_loader_src', 'wpto_remove_cssjs_ver_filter', 10, 2 );
 			add_filter( 'script_loader_src', 'wpto_remove_cssjs_ver_filter', 10, 2 );
+		}
+	}
+
+	// Remove WP version number
+	public function wpto_remove_wp_version_number( ) {
+		if(!empty($this->wpto_options['wp_version_number'])){
+
+
 		}
 	}
 
