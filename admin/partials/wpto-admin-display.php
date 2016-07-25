@@ -13,8 +13,9 @@
 
 	<h2 class="nav-tab-wrapper">
 		<a href="#options" class="nav-tab nav-tab-active"><?php _e('Options', $this->plugin_name);?></a>
-		<a href="#yoast" class="nav-tab"><?php _e('Yoast Seo', $this->plugin_name);?></a>
-		<a href="#contact" class="nav-tab"><?php _e('Contact', $this->plugin_name);?></a>
+	<?php	if ( defined('WPSEO_VERSION') ) { ?>
+	<a href="#yoast" class="nav-tab"><?php _e('Yoast Seo', $this->plugin_name);?></a>
+<?php } ?>	<a href="#contact" class="nav-tab"><?php _e('Contact', $this->plugin_name);?></a>
   </h2>
 
 	<form method="post" name="options" action="options.php">
@@ -52,7 +53,9 @@
 
 		 // Include tabs partials
 		 require_once('wpto_options.php');
-		 require_once('wpto_yoast.php');
+			if ( defined('WPSEO_VERSION') ) {
+ require_once('wpto_yoast.php');
+ }
 		 require_once('wpto_contact.php');
 
 		?>
