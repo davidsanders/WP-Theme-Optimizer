@@ -134,4 +134,17 @@ class wpto_Public {
 		}
 	}
 
+	// Remove WP Shortlink
+	public function wpto_remove_wp_shortlink( ) {
+		if(!empty($this->wpto_options['remove_wp_shortlink'])){
+			remove_action('wp_head', 'wp_shortlink_wp_head');
+		}
+	}
+
+	// Remove post links
+	public function wpto_remove_wp_post_links( ) {
+		if(!empty($this->wpto_options['remove_wp_post_links'])){
+			remove_action('wp_head', 'adjacent_posts_rel_link_wp_head');
+		}
+	}
 }

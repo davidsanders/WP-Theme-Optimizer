@@ -191,6 +191,8 @@ class wpto {
 		$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_rss_feed');
 		$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_wlwmanifest');
 		$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_wp_json');
+		$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_wp_shortlink');
+		$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_wp_post_links');
 
 
 

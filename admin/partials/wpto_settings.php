@@ -82,4 +82,20 @@
 			<span><?php esc_attr_e('Remove WP JSON link', $this->plugin_name);?></span>
 		</label>
 	</fieldset>
+
+	<fieldset>
+		<legend class="screen-reader-text"><span><?php _e('Remove WP Shortlink', $this->plugin_name);?></span></legend>
+		<label for="<?php echo $this->plugin_name;?>-remove_wp_shortlink">
+			<input type="checkbox" id="<?php echo $this->plugin_name;?>-remove_wp_shortlink" name="<?php echo $this->plugin_name;?>[remove_wp_shortlink]" value="1" <?php checked($remove_wp_shortlink, 1);?>/>
+			<span><?php esc_attr_e('Remove WP Shortlink', $this->plugin_name);?></span>
+		</label>
+	</fieldset>
+
+		<fieldset>
+			<legend class="screen-reader-text"><span><?php _e('Remove Next/Previous post links', $this->plugin_name);?></span></legend>
+			<label for="<?php echo $this->plugin_name;?>-remove_wp_post_links">
+				<input type="checkbox" id="<?php echo $this->plugin_name;?>-remove_wp_post_links" name="<?php echo $this->plugin_name;?>[remove_wp_post_links]" value="1" <?php checked($remove_wp_post_links, 1);?>/>
+				<span><?php esc_attr_e('Remove Next/Previous post links', $this->plugin_name);?></span>
+			</label>
+		</fieldset>
 </div>

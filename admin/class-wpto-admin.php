@@ -153,7 +153,7 @@ class wpto_Admin {
         $options = get_option($this->plugin_name);
         $valid = array();
 
-        
+
         $valid['css_js_versions'] = (isset($input['css_js_versions']) && !empty($input['css_js_versions'])) ? 1 : 0;
         $valid['wp_version_number'] = (isset($input['wp_version_number']) && !empty($input['wp_version_number'])) ? 1 : 0;
         $valid['remove_oembed'] = (isset($input['remove_oembed']) && !empty($input['remove_oembed'])) ? 1 : 0;
@@ -163,6 +163,8 @@ class wpto_Admin {
         $valid['remove_rss_feed'] = (isset($input['remove_rss_feed']) && !empty($input['remove_rss_feed'])) ? 1 : 0;
         $valid['remove_wlwmanifest'] = (isset($input['remove_wlwmanifest']) && !empty($input['remove_wlwmanifest'])) ? 1 : 0;
         $valid['remove_wp_json'] = (isset($input['remove_wp_json']) && !empty($input['remove_wp_json'])) ? 1 : 0;
+        $valid['remove_wp_shortlink'] = (isset($input['remove_wp_shortlink']) && !empty($input['remove_wp_shortlink'])) ? 1 : 0;
+        $valid['remove_wp_post_links'] = (isset($input['remove_wp_post_links']) && !empty($input['remove_wp_post_links'])) ? 1 : 0;
 
 
 

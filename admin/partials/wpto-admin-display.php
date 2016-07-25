@@ -34,6 +34,8 @@
 			$remove_rss_feed = $options['remove_rss_feed'];
 			$remove_wlwmanifest = $options['remove_wlwmanifest'];
 			$remove_wp_json = $options['remove_wp_json'];
+			$remove_wp_shortlink = $options['remove_wp_shortlink'];
+			$remove_wp_post_links = $options['remove_wp_post_links'];
 
 
 				/*
