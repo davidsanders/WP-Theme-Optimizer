@@ -15,8 +15,10 @@
 		<a href="#options" class="nav-tab nav-tab-active"><?php _e('Options', $this->plugin_name);?></a>
 	<?php	if ( defined('WPSEO_VERSION') ) { ?>
 	<a href="#yoast" class="nav-tab"><?php _e('Yoast Seo', $this->plugin_name);?></a>
-<?php } ?>
+<?php }
+if ( class_exists( 'WooCommerce' ) ) {?>
 <a href="#wc" class="nav-tab"><?php _e('WooCommerce', $this->plugin_name);?></a>
+<?php } ?>
 <a href="#contact" class="nav-tab"><?php _e('Contact', $this->plugin_name);?></a>
   </h2>
 
@@ -47,7 +49,24 @@
 		// Yoast Optimisations
 		$remove_yoast_information = $options['remove_yoast_information'];
 
-
+		// WooCommerce Optimisations
+		$remove_wc_price_slider = $options['remove_wc_price_slider'];
+/*		$remove_wc_single_product = $options['remove_wc_single_product'];
+		$remove_wc_add_to_cart = $options['remove_wc_add_to_cart'];
+		$remove_wc_cart_fragments = $options['remove_wc_cart_fragments'];
+		$remove_wc_checkout = $options['remove_wc_checkout'];
+		$remove_wc_add_to_cart_variation = $options['remove_wc_add_to_cart_variation'];
+		$remove_wc_single_product = $options['remove_wc_single_product'];
+		$remove_wc_cart = $options['remove_wc_cart'];
+		$remove_wc_chosen = $options['remove_wc_chosen'];
+		$remove_woocommerce = $options['remove_woocommerce'];
+		$remove_prettyPhoto = $options['remove_prettyPhoto'];
+		$remove_prettyPhoto_init = $options['remove_prettyPhoto_init'];
+		$remove_jquery_blockui = $options['remove_jquery_blockui'];
+		$remove_jquery_placeholder = $options['remove_jquery_placeholder'];
+		$remove_fancybox = $options['remove_fancybox'];
+		$remove_jqueryui = $options['remove_jqueryui'];
+*/
 				/*
 			* Set up hidden fields
 			*
@@ -61,6 +80,9 @@
 			if ( defined('WPSEO_VERSION') ) {
  				require_once('wpto_yoast.php');
  			}
+			if ( class_exists( 'WooCommerce' ) ) {
+				require_once('wpto_wc.php');
+			}
 		 require_once('wpto_contact.php');
 
 		?>

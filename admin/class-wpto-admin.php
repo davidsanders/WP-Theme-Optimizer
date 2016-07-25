@@ -165,8 +165,28 @@ class wpto_Admin {
         $valid['remove_wp_shortlink'] = (isset($input['remove_wp_shortlink']) && !empty($input['remove_wp_shortlink'])) ? 1 : 0;
         $valid['remove_wp_post_links'] = (isset($input['remove_wp_post_links']) && !empty($input['remove_wp_post_links'])) ? 1 : 0;
         $valid['remove_pingback'] = (isset($input['remove_pingback']) && !empty($input['remove_pingback'])) ? 1 : 0;
+
+        // Yoast
         $valid['remove_yoast_information'] = (isset($input['remove_yoast_information']) && !empty($input['remove_yoast_information'])) ? 1 : 0;
 
+        // WooCommerce
+        $valid['remove_wc_price_slider'] = (isset($input['remove_wc_price_slider']) && !empty($input['remove_wc_price_slider'])) ? 1 : 0;
+/*        $valid['remove_wc_single_product'] = (isset($input['remove_wc_single_product']) && !empty($input['remove_wc_single_product'])) ? 1 : 0;
+        $valid['remove_wc_add_to_cart'] = (isset($input['remove_wc_add_to_cart']) && !empty($input['remove_wc_add_to_cart'])) ? 1 : 0;
+        $valid['remove_wc_checkout'] = (isset($input['remove_wc_checkout']) && !empty($input['remove_wc_checkout'])) ? 1 : 0;
+        $valid['remove_wc_checkout'] = (isset($input['remove_wc_checkout']) && !empty($input['remove_wc_checkout'])) ? 1 : 0;
+        $valid['remove_wc_add_to_cart_variation'] = (isset($input['remove_wc_add_to_cart_variation']) && !empty($input['remove_wc_add_to_cart_variation'])) ? 1 : 0;
+        $valid['remove_wc_single_product'] = (isset($input['remove_wc_single_product']) && !empty($input['remove_wc_single_product'])) ? 1 : 0;
+        $valid['remove_wc_cart'] = (isset($input['remove_wc_cart']) && !empty($input['remove_wc_cart'])) ? 1 : 0;
+        $valid['remove_wc_chosen'] = (isset($input['remove_wc_chosen']) && !empty($input['remove_wc_chosen'])) ? 1 : 0;
+        $valid['remove_woocommerce'] = (isset($input['remove_woocommerce']) && !empty($input['remove_woocommerce'])) ? 1 : 0;
+        $valid['remove_prettyPhoto'] = (isset($input['remove_prettyPhoto']) && !empty($input['remove_prettyPhoto'])) ? 1 : 0;
+        $valid['remove_prettyPhoto_init'] = (isset($input['remove_prettyPhoto_init']) && !empty($input['remove_prettyPhoto_init'])) ? 1 : 0;
+        $valid['remove_jquery_blockui'] = (isset($input['remove_jquery_blockui']) && !empty($input['remove_jquery_blockui'])) ? 1 : 0;
+        $valid['remove_jquery_placeholder'] = (isset($input['remove_jquery_placeholder']) && !empty($input['remove_jquery_placeholder'])) ? 1 : 0;
+        $valid['remove_fancybox'] = (isset($input['remove_fancybox']) && !empty($input['remove_fancybox'])) ? 1 : 0;
+        $valid['remove_jqueryui'] = (isset($input['remove_jqueryui']) && !empty($input['remove_jqueryui'])) ? 1 : 0;
+*/
         return $valid;
     }
 
