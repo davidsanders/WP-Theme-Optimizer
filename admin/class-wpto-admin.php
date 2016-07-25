@@ -160,6 +160,7 @@ class wpto_Admin {
         $valid['remove_jquery_migrate'] = (isset($input['remove_jquery_migrate']) && !empty($input['remove_jquery_migrate'])) ? 1 : 0;
         $valid['remove_emoji_release'] = (isset($input['remove_emoji_release']) && !empty($input['remove_emoji_release'])) ? 1 : 0;
         $valid['remove_rsd_link'] = (isset($input['remove_rsd_link']) && !empty($input['remove_rsd_link'])) ? 1 : 0;
+        $valid['remove_rss_feed'] = (isset($input['remove_rss_feed']) && !empty($input['remove_rss_feed'])) ? 1 : 0;
 
 
 

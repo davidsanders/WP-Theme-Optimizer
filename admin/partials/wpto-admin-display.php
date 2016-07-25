@@ -31,6 +31,7 @@
 			$remove_jquery_migrate = $options['remove_jquery_migrate'];
 			$remove_emoji_release = $options['remove_emoji_release'];
 			$remove_rsd_link = $options['remove_rsd_link'];
+			$remove_rss_feed = $options['remove_rss_feed'];
 
 
 				/*

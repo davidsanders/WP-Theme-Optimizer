@@ -108,5 +108,18 @@ class wpto_Public {
 		}
 	}
 
+	// Remove RSS Feed
+	public function wpto_remove_rss_feed( ) {
+		if(!empty($this->wpto_options['remove_rss_feed'])){
+			function wpto_disable_feed() {
+				wp_die( __('No feed available,please visit our <a href="'. get_bloginfo('url') .'">homepage</a>!') );
+				}
+
+		
+				remove_action( 'wp_head', 'feed_links_extra', 3 );
+				remove_action( 'wp_head', 'feed_links', 2 );
+
+	}
+	}
 
 }
