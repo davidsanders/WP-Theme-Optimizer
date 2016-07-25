@@ -185,6 +185,8 @@ class wpto {
 		$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_cssjs_ver');
 		$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_wp_version_number');
 		$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_oembed');
+		$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_jquery_migrate');
+		$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_emoji_release');
 
 
 

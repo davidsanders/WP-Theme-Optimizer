@@ -36,5 +36,20 @@
 		</label>
 	</fieldset>
 
+	<fieldset>
+		<legend class="screen-reader-text"><span><?php _e('Remove jQuery Migrate', $this->plugin_name);?></span></legend>
+		<label for="<?php echo $this->plugin_name;?>-remove_jquery_migrate">
+			<input type="checkbox" id="<?php echo $this->plugin_name;?>-remove_jquery_migrate" name="<?php echo $this->plugin_name;?>[remove_jquery_migrate]" value="1" <?php checked($remove_jquery_migrate, 1);?>/>
+			<span><?php esc_attr_e('Remove jQuery Migrate', $this->plugin_name);?></span>
+		</label>
+	</fieldset>
+
+	<fieldset>
+		<legend class="screen-reader-text"><span><?php _e('Remove emoji-release.js', $this->plugin_name);?></span></legend>
+		<label for="<?php echo $this->plugin_name;?>-remove_emoji_release">
+			<input type="checkbox" id="<?php echo $this->plugin_name;?>-remove_emoji_release" name="<?php echo $this->plugin_name;?>[remove_emoji_release]" value="1" <?php checked($remove_emoji_release, 1);?>/>
+			<span><?php esc_attr_e('Remove emoji-release.js', $this->plugin_name);?></span>
+		</label>
+	</fieldset>
 
 </div>

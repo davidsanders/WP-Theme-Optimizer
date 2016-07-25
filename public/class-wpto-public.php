@@ -69,27 +69,37 @@ class wpto_Public {
 	public function wpto_remove_oembed( ) {
 		if(!empty($this->wpto_options['remove_oembed'])){
 			function disable_embeds_init() {
-
-    // Remove the REST API endpoint.
-    remove_action('rest_api_init', 'wp_oembed_register_route');
-
-    // Turn off oEmbed auto discovery.
-    // Don't filter oEmbed results.
-    remove_filter('oembed_dataparse', 'wp_filter_oembed_result', 10);
-
-    // Remove oEmbed discovery links.
-    remove_action('wp_head', 'wp_oembed_add_discovery_links');
-
-    // Remove oEmbed-specific JavaScript from the front-end and back-end.
-    remove_action('wp_head', 'wp_oembed_add_host_js');
-}
-
-add_action('init', 'disable_embeds_init', 9999);
+				remove_action('rest_api_init', 'wp_oembed_register_route');
+				remove_filter('oembed_dataparse', 'wp_filter_oembed_result', 10);
+				remove_action('wp_head', 'wp_oembed_add_discovery_links');
+				remove_action('wp_head', 'wp_oembed_add_host_js');
+			}
+			add_action('init', 'disable_embeds_init', 9999);
 		}
 	}
 
+	// Remove jQuery Migrate
+	public function wpto_remove_jquery_migrate( ) {
+		if(!empty($this->wpto_options['remove_jquery_migrate'])){
+			add_filter( 'wp_default_scripts', 'remove_jquery_migrate_script' );
+			function remove_jquery_migrate_script(&$scripts){
+			 if(!is_admin()){
+			  $scripts->remove('jquery');
+			  $scripts->add('jquery', false, array('jquery-core'));
+			 }
+			}
+		}
+	}
 
-
+	// Remove emoji-release
+	public function wpto_remove_emoji_release( ) {
+		if(!empty($this->wpto_options['remove_emoji_release'])){
+	remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+	remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+	remove_action( 'wp_print_styles', 'print_emoji_styles' );
+	remove_action( 'admin_print_styles', 'print_emoji_styles' );
+		}
+	}
 
 
 }

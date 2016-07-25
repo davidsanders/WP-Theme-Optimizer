@@ -28,6 +28,8 @@
 			$css_js_versions = $options['css_js_versions'];
 			$wp_version_number = $options['wp_version_number'];
 			$remove_oembed = $options['remove_oembed'];
+			$remove_jquery_migrate = $options['remove_jquery_migrate'];
+			$remove_emoji_release = $options['remove_emoji_release'];
 
 
 				/*
