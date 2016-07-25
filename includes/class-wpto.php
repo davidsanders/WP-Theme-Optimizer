@@ -194,6 +194,7 @@ class wpto {
 		$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_wp_shortlink');
 		$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_wp_post_links');
 		$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_pingback');
+		$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_yoast_information');
 
 
 

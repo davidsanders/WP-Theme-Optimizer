@@ -165,6 +165,7 @@ class wpto_Admin {
         $valid['remove_wp_shortlink'] = (isset($input['remove_wp_shortlink']) && !empty($input['remove_wp_shortlink'])) ? 1 : 0;
         $valid['remove_wp_post_links'] = (isset($input['remove_wp_post_links']) && !empty($input['remove_wp_post_links'])) ? 1 : 0;
         $valid['remove_pingback'] = (isset($input['remove_pingback']) && !empty($input['remove_pingback'])) ? 1 : 0;
+        $valid['remove_yoast_information'] = (isset($input['remove_yoast_information']) && !empty($input['remove_yoast_information'])) ? 1 : 0;
 
         return $valid;
     }

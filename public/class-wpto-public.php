@@ -62,6 +62,7 @@ class wpto_Public {
 	 	 return '';
 	 	 }
 	 	 add_filter('the_generator', 'remove_version_generator');
+
 		}
 	}
 
@@ -165,9 +166,39 @@ class wpto_Public {
     add_action('template_redirect', 'link_rel_buffer_start', -1);
     add_action('get_header', 'link_rel_buffer_start');
     add_action('wp_head', 'link_rel_buffer_end', 999);
-
-		
-}
+		}
 		}
 	}
+
+
+	// Remove Yoast Information
+	public function wpto_remove_yoast_information( ) {
+		if(!empty($this->wpto_options['remove_yoast_information'])){
+			if (defined('WPSEO_VERSION')){
+			    $instance = WPSEO_Frontend::get_instance();
+			    remove_action( 'wpseo_head', array( $instance, 'debug_marker' ), 2 );
+			    remove_action( 'wp_head', array( $instance, 'head' ), 1 );
+			    add_action( 'wp_head', 'custom_yoast_head', 1 );
+			    function custom_yoast_head() {
+			        global $wp_query;
+			        $old_wp_query = null;
+			        if ( ! $wp_query->is_main_query() ) {
+			            $old_wp_query = $wp_query;
+			            wp_reset_query();
+			        }
+			        do_action( 'wpseo_head' );
+			        if ( ! empty( $old_wp_query ) ) {
+			            $GLOBALS['wp_query'] = $old_wp_query;
+			            unset( $old_wp_query );
+			        }
+			        return;
+			    }
+			}
+		}
+	}
+
+
+
+
+
 }

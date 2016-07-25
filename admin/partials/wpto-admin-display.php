@@ -13,6 +13,7 @@
 
 	<h2 class="nav-tab-wrapper">
 		<a href="#options" class="nav-tab nav-tab-active"><?php _e('Options', $this->plugin_name);?></a>
+		<a href="#yoast" class="nav-tab"><?php _e('Yoast Seo', $this->plugin_name);?></a>
 		<a href="#contact" class="nav-tab"><?php _e('Contact', $this->plugin_name);?></a>
   </h2>
 
@@ -38,6 +39,7 @@
 			$remove_wp_shortlink = $options['remove_wp_shortlink'];
 			$remove_wp_post_links = $options['remove_wp_post_links'];
 			$remove_pingback = $options['remove_pingback'];
+			$remove_yoast_information = $options['remove_yoast_information'];
 
 
 				/*
@@ -50,6 +52,7 @@
 
 		 // Include tabs partials
 		 require_once('wpto_options.php');
+		 require_once('wpto_yoast.php');
 		 require_once('wpto_contact.php');
 
 		?>

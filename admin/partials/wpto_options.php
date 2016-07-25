@@ -106,4 +106,5 @@
 				<span><?php esc_attr_e('Remove Pingbacks globally', $this->plugin_name);?></span>
 			</label>
 		</fieldset>
+
 </div>
