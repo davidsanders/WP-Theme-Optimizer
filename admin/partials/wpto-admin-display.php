@@ -30,6 +30,7 @@
 			$remove_oembed = $options['remove_oembed'];
 			$remove_jquery_migrate = $options['remove_jquery_migrate'];
 			$remove_emoji_release = $options['remove_emoji_release'];
+			$remove_rsd_link = $options['remove_rsd_link'];
 
 
 				/*

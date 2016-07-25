@@ -52,4 +52,12 @@
 		</label>
 	</fieldset>
 
+	<fieldset>
+		<legend class="screen-reader-text"><span><?php _e('Remove RSD Link', $this->plugin_name);?></span></legend>
+		<label for="<?php echo $this->plugin_name;?>-remove_emoji_release">
+			<input type="checkbox" id="<?php echo $this->plugin_name;?>-remove_rsd_link" name="<?php echo $this->plugin_name;?>[remove_rsd_link]" value="1" <?php checked($remove_rsd_link, 1);?>/>
+			<span><?php esc_attr_e('Remove RSD Link', $this->plugin_name);?></span>
+		</label>
+	</fieldset>
+
 </div>

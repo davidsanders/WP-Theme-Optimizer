@@ -101,5 +101,12 @@ class wpto_Public {
 		}
 	}
 
+	// Remove RSD Link
+	public function wpto_remove_rsd_link( ) {
+		if(!empty($this->wpto_options['remove_rsd_link'])){
+			remove_action ('wp_head', 'rsd_link');
+		}
+	}
+
 
 }
