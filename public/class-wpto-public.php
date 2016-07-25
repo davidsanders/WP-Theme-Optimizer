@@ -147,4 +147,27 @@ class wpto_Public {
 			remove_action('wp_head', 'adjacent_posts_rel_link_wp_head');
 		}
 	}
+
+	// Remove post links
+	public function wpto_remove_pingback( ) {
+		if(!empty($this->wpto_options['remove_pingback'])){
+			if (!is_admin()) {
+    function link_rel_buffer_callback($buffer) {
+        $buffer = preg_replace('/(<link.*?rel=("|\')pingback("|\').*?href=("|\')(.*?)("|\')(.*?)?\/?>|<link.*?href=("|\')(.*?)("|\').*?rel=("|\')pingback("|\')(.*?)?\/?>)/i', '', $buffer);
+                return $buffer;
+    }
+    function link_rel_buffer_start() {
+        ob_start("link_rel_buffer_callback");
+    }
+    function link_rel_buffer_end() {
+        ob_flush();
+    }
+    add_action('template_redirect', 'link_rel_buffer_start', -1);
+    add_action('get_header', 'link_rel_buffer_start');
+    add_action('wp_head', 'link_rel_buffer_end', 999);
+
+		
+}
+		}
+	}
 }

@@ -7,7 +7,7 @@
 */
 ?>
 
-<div id="clean-up" class="wrap metabox-holder columns-2 wpto-metaboxes">
+<div id="options" class="wrap metabox-holder columns-4 wpto-metaboxes">
 
 
 	<!-- remove css and js query string versions -->
@@ -96,6 +96,14 @@
 			<label for="<?php echo $this->plugin_name;?>-remove_wp_post_links">
 				<input type="checkbox" id="<?php echo $this->plugin_name;?>-remove_wp_post_links" name="<?php echo $this->plugin_name;?>[remove_wp_post_links]" value="1" <?php checked($remove_wp_post_links, 1);?>/>
 				<span><?php esc_attr_e('Remove Next/Previous post links', $this->plugin_name);?></span>
+			</label>
+		</fieldset>
+
+		<fieldset>
+			<legend class="screen-reader-text"><span><?php _e('Remove Pingbacks globally', $this->plugin_name);?></span></legend>
+			<label for="<?php echo $this->plugin_name;?>-remove_pingback">
+				<input type="checkbox" id="<?php echo $this->plugin_name;?>-remove_pingback" name="<?php echo $this->plugin_name;?>[remove_pingback]" value="1" <?php checked($remove_pingback, 1);?>/>
+				<span><?php esc_attr_e('Remove Pingbacks globally', $this->plugin_name);?></span>
 			</label>
 		</fieldset>
 </div>

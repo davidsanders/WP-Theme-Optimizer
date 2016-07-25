@@ -12,7 +12,8 @@
 	<h2><?php echo esc_html( get_admin_page_title() ); ?></h2>
 
 	<h2 class="nav-tab-wrapper">
-            <a href="#clean-up" class="nav-tab nav-tab-active"><?php _e('Options', $this->plugin_name);?></a>
+		<a href="#options" class="nav-tab nav-tab-active"><?php _e('Options', $this->plugin_name);?></a>
+		<a href="#contact" class="nav-tab"><?php _e('Contact', $this->plugin_name);?></a>
   </h2>
 
 	<form method="post" name="options" action="options.php">
@@ -36,6 +37,7 @@
 			$remove_wp_json = $options['remove_wp_json'];
 			$remove_wp_shortlink = $options['remove_wp_shortlink'];
 			$remove_wp_post_links = $options['remove_wp_post_links'];
+			$remove_pingback = $options['remove_pingback'];
 
 
 				/*
@@ -47,7 +49,8 @@
 
 
 		 // Include tabs partials
-			require_once('wpto_settings.php');
+		 require_once('wpto_options.php');
+		 require_once('wpto_contact.php');
 
 		?>
 
