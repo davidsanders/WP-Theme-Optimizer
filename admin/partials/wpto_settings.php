@@ -75,4 +75,12 @@
 			<span><?php esc_attr_e('Remove wlwmanifest.xml', $this->plugin_name);?></span>
 		</label>
 	</fieldset>
+
+	<fieldset>
+		<legend class="screen-reader-text"><span><?php _e('Remove WP JSON link', $this->plugin_name);?></span></legend>
+		<label for="<?php echo $this->plugin_name;?>-remove_wp_json">
+			<input type="checkbox" id="<?php echo $this->plugin_name;?>-remove_wp_json" name="<?php echo $this->plugin_name;?>[remove_wp_json]" value="1" <?php checked($remove_wp_json, 1);?>/>
+			<span><?php esc_attr_e('Remove WP JSON link', $this->plugin_name);?></span>
+		</label>
+	</fieldset>
 </div>

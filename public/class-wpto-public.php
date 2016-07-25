@@ -123,7 +123,15 @@ class wpto_Public {
 	public function wpto_remove_wlwmanifest( ) {
 		if(!empty($this->wpto_options['remove_wlwmanifest'])){
 			remove_action('wp_head', 'wlwmanifest_link');
+		}
 	}
-}
+
+	// Remove post links
+	public function wpto_remove_wp_json( ) {
+		if(!empty($this->wpto_options['remove_wp_json'])){
+			remove_action( 'wp_head', 'rest_output_link_wp_head', 10 );
+
+		}
+	}
 
 }

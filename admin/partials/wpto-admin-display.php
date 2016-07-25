@@ -33,6 +33,7 @@
 			$remove_rsd_link = $options['remove_rsd_link'];
 			$remove_rss_feed = $options['remove_rss_feed'];
 			$remove_wlwmanifest = $options['remove_wlwmanifest'];
+			$remove_wp_json = $options['remove_wp_json'];
 
 
 				/*

@@ -162,6 +162,7 @@ class wpto_Admin {
         $valid['remove_rsd_link'] = (isset($input['remove_rsd_link']) && !empty($input['remove_rsd_link'])) ? 1 : 0;
         $valid['remove_rss_feed'] = (isset($input['remove_rss_feed']) && !empty($input['remove_rss_feed'])) ? 1 : 0;
         $valid['remove_wlwmanifest'] = (isset($input['remove_wlwmanifest']) && !empty($input['remove_wlwmanifest'])) ? 1 : 0;
+        $valid['remove_wp_json'] = (isset($input['remove_wp_json']) && !empty($input['remove_wp_json'])) ? 1 : 0;
 
 
 
