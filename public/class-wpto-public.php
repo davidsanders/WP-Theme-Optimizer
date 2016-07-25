@@ -114,12 +114,16 @@ class wpto_Public {
 			function wpto_disable_feed() {
 				wp_die( __('No feed available,please visit our <a href="'. get_bloginfo('url') .'">homepage</a>!') );
 				}
-
-		
 				remove_action( 'wp_head', 'feed_links_extra', 3 );
 				remove_action( 'wp_head', 'feed_links', 2 );
+			}
+	}
 
+	// Remove wlwmanifest
+	public function wpto_remove_wlwmanifest( ) {
+		if(!empty($this->wpto_options['remove_wlwmanifest'])){
+			remove_action('wp_head', 'wlwmanifest_link');
 	}
-	}
+}
 
 }
