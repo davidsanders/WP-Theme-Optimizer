@@ -12,7 +12,7 @@
 	<h2><?php echo esc_html( get_admin_page_title() ); ?></h2>
 
 	<h2 class="nav-tab-wrapper">
-            <a href="#clean-up" class="nav-tab nav-tab-active"><?php _e('Clean up', $this->plugin_name);?></a>
+            <a href="#clean-up" class="nav-tab nav-tab-active"><?php _e('Options', $this->plugin_name);?></a>
   </h2>
 
 	<form method="post" name="options" action="options.php">

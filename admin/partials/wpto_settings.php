@@ -9,7 +9,6 @@
 
 <div id="clean-up" class="wrap metabox-holder columns-2 wpto-metaboxes">
 
-	<h2><?php esc_attr_e( 'Options', $this->plugin_name ); ?></h2>
 
 	<!-- remove css and js query string versions -->
 	<fieldset>
