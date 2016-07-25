@@ -16,9 +16,9 @@
 	<?php	if ( defined('WPSEO_VERSION') ) { ?>
 	<a href="#yoast" class="nav-tab"><?php _e('Yoast Seo', $this->plugin_name);?></a>
 <?php }
-if ( class_exists( 'WooCommerce' ) ) {?>
+/*if ( class_exists( 'WooCommerce' ) ) {?>
 <a href="#wc" class="nav-tab"><?php _e('WooCommerce', $this->plugin_name);?></a>
-<?php } ?>
+<?php  } */ ?>
 <a href="#contact" class="nav-tab"><?php _e('Contact', $this->plugin_name);?></a>
   </h2>
 
