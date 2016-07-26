@@ -10,7 +10,7 @@
 <div id="wc" class="wrap metabox-holder columns-2 wp_cbf-metaboxes hidden">
 
 	<h2><?php esc_attr_e( 'WooCommerce', $this->plugin_name ); ?></h2>
-        <p><?php _e('To Add Yoast Options', $this->plugin_name);?></p>
+        <p><?php _e('To Add WC Options', $this->plugin_name);?></p>
 
 			<?php
 $wc_dequeue_scripts = array();
