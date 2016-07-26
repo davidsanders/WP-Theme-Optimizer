@@ -193,28 +193,11 @@ class wpto {
 		$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_wp_json');
 		$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_wp_shortlink');
 		$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_wp_post_links');
-		$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_pingback');
 // Yoast
 $this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_yoast_information');
 
 // WooCommerce
-$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_wc_price_slider');
-/*$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_wc_single_product');
-$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_wc_add_to_cart');
-$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_wc_cart_fragments');
-$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_wc_checkout');
-$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_wc_add_to_cart_variation');
-$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_wc_single_product');
-$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_wc_cart');
-$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_wc_chosen');
-$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_woocommerce');
-$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_prettyPhoto');
-$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_prettyPhoto_init');
-$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_jquery_blockui');
-$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_jquery_placeholder');
-$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_fancybox');
-$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_jqueryui');
-*/
+		$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_wc_cart_fragments');
 
 
 

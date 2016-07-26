@@ -198,118 +198,20 @@ class wpto_Public {
 	}
 
 
-// WooCommerce
 
-// Remove WC Price Slider
+	public function wpto_wc_cart_fragments( ) {
+if(!empty($this->wpto_options['wc_cart_fragments'])){
 
-
-
-	public function wpto_remove_wc_price_slider( ) {
-  if(!empty($this->wpto_options['remove_wc_price_slider'])){
-			  wp_dequeue_script( 'wc_price_slider' );
-
-  }
-}
-/*
-// Remove WC Add To Cart
-public function wpto_remove_wc_add_to_cart( ) {
-  if(!empty($this->wpto_options['remove_wc_add_to_cart'])){
-  wp_dequeue_script( 'wc-add-to-cart' );
-  }
+		function grd_woocommerce_script_cleaner() {
+			wp_dequeue_script( 'wc-cart-fragments' );
+		}
+		add_action( 'wp_enqueue_scripts', 'grd_woocommerce_script_cleaner', 99 );
+	}
 }
 
-// Remove WC Cart Fragments
-public function wpto_remove_wc_cart_fragments( ) {
-  if(!empty($this->wpto_options['remove_wc_cart_fragments'])){
-  wp_dequeue_script( 'wc-cart-fragments' );
-  }
-}
 
-// Remove WC Checkout
-public function wpto_remove_wc_checkout( ) {
-  if(!empty($this->wpto_options['remove_wc_checkout'])){
-  wp_dequeue_script( 'wc-checkout' );
-  }
-}
 
-// Remove WC Add To Cart Variation
-public function wpto_remove_wc_add_to_cart_variation( ) {
-  if(!empty($this->wpto_options['remove_wc_add_to_cart_variation'])){
-  wp_dequeue_script( 'wc-add-to-cart-variation' );
-  }
-}
-
-// Remove WC Single Product
-public function wpto_remove_wc_single_product( ) {
-  if(!empty($this->wpto_options['remove_wc_single_product'])){
-  wp_dequeue_script( 'wc-single-product' );
-  }
-}
-
-// Remove WC Cart
-public function wpto_remove_wc_cart( ) {
-  if(!empty($this->wpto_options['remove_wc_cart'])){
-  wp_dequeue_script( 'wc-cart' );
-  }
-}
-
-// Remove WC Chosen
-public function wpto_remove_wc_chosen( ) {
-  if(!empty($this->wpto_options['remove_wc_chosen'])){
-  wp_dequeue_script( 'wc-chosen' );
-  }
-}
-
-// Remove WC WooCommerce
-public function wpto_remove_woocommerce( ) {
-  if(!empty($this->wpto_options['remove_woocommerce'])){
-  wp_dequeue_script( 'woocommerce' );
-  }
-}
-
-// Remove WC PrettyPhoto
-public function wpto_remove_prettyPhoto( ) {
-  if(!empty($this->wpto_options['remove_prettyPhoto'])){
-  wp_dequeue_script( 'prettyPhoto' );
-  }
-}
-
-// Remove WC PrettyPhoto Init
-public function wpto_remove_prettyPhoto_init( ) {
-  if(!empty($this->wpto_options['remove_prettyPhoto_init'])){
-  wp_dequeue_script( 'prettyPhoto-init' );
-  }
-}
-
-// Remove WC jQuery UI
-public function wpto_remove_jquery_blockui( ) {
-  if(!empty($this->wpto_options['remove_jquery_blockui'])){
-  wp_dequeue_script( 'jquery-blockui' );
-  }
-}
-
-// Remove WC jQuery Placeholder
-public function wpto_remove_jquery_placeholder( ) {
-  if(!empty($this->wpto_options['remove_jquery_placeholder'])){
-  wp_dequeue_script( 'jquery-placeholder' );
-  }
-}
-
-// Remove WC Fancybox
-public function wpto_remove_fancybox( ) {
-  if(!empty($this->wpto_options['remove_fancybox'])){
-  wp_dequeue_script( 'fancybox' );
-  }
-}
-
-// Remove WC jQueryUI
-public function wpto_remove_jqueryui( ) {
-  if(!empty($this->wpto_options['remove_jqueryui'])){
-  wp_dequeue_script( 'jqueryui' );
-  }
-}
-*/
-
+	
 
 
 
