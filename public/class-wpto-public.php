@@ -199,20 +199,50 @@ class wpto_Public {
 
 
 
-	public function wpto_wc_cart_fragments( ) {
 
-		if(!empty($this->wpto_options['wc_cart_fragments'])){
 
-function grd_woocommerce_script_cleaner() {
+public function wpto_wc_dequeue_scripts( ) {
+
+	if(!empty($this->wpto_options['wc_cart_fragments'])){
+function wc_script_dequeue() {
 	
 
-	wp_dequeue_script( 'wc-cart-fragments' );
-
-	
-}
-add_action( 'wp_enqueue_scripts', 'grd_woocommerce_script_cleaner', 99 );
+	// Unless we're in the store, remove all the cruft!
+	if ( ! is_woocommerce() && ! is_cart() && ! is_checkout() ) {
+		wp_dequeue_script( 'wc-add-payment-method' );
+		wp_dequeue_script( 'wc-lost-password' );
+		wp_dequeue_script( 'wc_price_slider' );
+		wp_dequeue_script( 'wc-single-product' );
+		wp_dequeue_script( 'wc-add-to-cart' );
+		wp_dequeue_script( 'wc-cart-fragments' );
+		wp_dequeue_script( 'wc-credit-card-form' );
+		wp_dequeue_script( 'wc-checkout' );
+		wp_dequeue_script( 'wc-add-to-cart-variation' );
+		wp_dequeue_script( 'wc-single-product' );
+		wp_dequeue_script( 'wc-cart' );
+		wp_dequeue_script( 'wc-chosen' );
+		wp_dequeue_script( 'woocommerce' );
+		wp_dequeue_script( 'prettyPhoto' );
+		wp_dequeue_script( 'prettyPhoto-init' );
+		wp_dequeue_script( 'jquery-blockui' );
+		wp_dequeue_script( 'jquery-placeholder' );
+		wp_dequeue_script( 'jquery-payment' );
+		wp_dequeue_script( 'fancybox' );
+		wp_dequeue_script( 'jqueryui' );
 	}
 }
+add_action( 'wp_enqueue_scripts', 'wc_script_dequeue', 99 );
+}
+}
+	
+
+
+
+
+
+
+
+
 
 
 

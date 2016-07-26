@@ -54,6 +54,11 @@ if ( class_exists( 'WooCommerce' ) ) {?>
 
 
 
+
+
+
+
+
 				/*
 			* Set up hidden fields
 			*

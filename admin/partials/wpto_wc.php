@@ -12,15 +12,15 @@
 	<h2><?php esc_attr_e( 'WooCommerce', $this->plugin_name ); ?></h2>
         <p><?php _e('To Add WC Options', $this->plugin_name);?></p>
 
-			<?php
+<?php
 $wc_dequeue_scripts = array();
 $wc_dequeue_scripts[101] = array(
     "id" => "wc_cart_fragments",
+    "output" => "wc-cart-fragments",
     "title" => "Remove wc-cart-fragments.js",
     "description" => "Donec ullamcorper nulla non metus auctor fringilla.",   
 );
 
-if(!empty($wc_dequeue_scripts)) {
 foreach($wc_dequeue_scripts as $wc_dequeue_script) {
 ?>
 	
@@ -28,12 +28,13 @@ foreach($wc_dequeue_scripts as $wc_dequeue_script) {
 			<legend class="screen-reader-text"><span><?php _e($wc_dequeue_script["title"], $this->plugin_name);?></span></legend>
 			<label for="<?php echo $this->plugin_name;?>-<?php echo $wc_dequeue_script["id"] ?>">
 				<input type="checkbox" id="<?php echo $this->plugin_name;?>-<?php echo $wc_dequeue_script["id"] ?>" name="<?php echo $this->plugin_name;?>[<?php echo $wc_dequeue_script["id"] ?>]" value="1" <?php checked($wc_cart_fragments, 1);?>/>
-				<span><?php echo $wc_dequeue_script["title"] ?></span>
+				<span><?php echo $wc_dequeue_script["title"] ?></span><br/>
+				<span><?php echo $wc_dequeue_script["description"] ?></span>
 			</label>
 		</fieldset>
 <?php
 }
-}
+
 ?>
 
 							</div>

@@ -197,9 +197,28 @@ class wpto {
 $this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_yoast_information');
 
 // WooCommerce
-		$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_wc_cart_fragments');
+	$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_wc_dequeue_scripts');
+
+//	$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_wc_cart_fragments');
 
 
+
+
+
+
+
+/*
+
+if(!empty($wc_dequeue_scripts)) {
+foreach($wc_dequeue_scripts as $wc_dequeue_script) {
+$wpto = "wpto_";
+$direct_text = $wc_dequeue_script['id'];
+
+$this->loader->add_action( 'after_setup_theme', $plugin_public, $wpto . $direct_text); 
+
+}
+}
+*/
 
 
 
