@@ -200,12 +200,17 @@ class wpto_Public {
 
 
 	public function wpto_wc_cart_fragments( ) {
-if(!empty($this->wpto_options['wc_cart_fragments'])){
 
-		function grd_woocommerce_script_cleaner() {
-			wp_dequeue_script( 'wc-cart-fragments' );
-		}
-		add_action( 'wp_enqueue_scripts', 'grd_woocommerce_script_cleaner', 99 );
+		if(!empty($this->wpto_options['wc_cart_fragments'])){
+
+function grd_woocommerce_script_cleaner() {
+	
+
+	wp_dequeue_script( 'wc-cart-fragments' );
+
+	
+}
+add_action( 'wp_enqueue_scripts', 'grd_woocommerce_script_cleaner', 99 );
 	}
 }
 
