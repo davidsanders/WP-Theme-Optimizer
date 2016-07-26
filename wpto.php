@@ -51,6 +51,23 @@ register_deactivation_hook( __FILE__, 'deactivate_wpto' );
  */
 require plugin_dir_path( __FILE__ ) . 'includes/class-wpto.php';
 
+
+
+/** Add Github Updater
+*/
+if( ! class_exists( 'wpto_updater' ) ){
+	include_once( plugin_dir_path( __FILE__ ) . 'includes/updater.php' );
+}
+
+$updater = new wpto_updater( __FILE__ );
+$updater->set_username( 'dsgnr' );
+$updater->set_repository( 'WP-Theme-Optimiser' );
+/*
+	$updater->authorize( 'abcdefghijk1234567890' ); // Your auth code goes here for private repos
+*/
+$updater->initialize();
+
+
 /**
  * Begins execution of the plugin.
  *

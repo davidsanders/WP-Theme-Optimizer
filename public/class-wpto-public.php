@@ -201,17 +201,17 @@ class wpto_Public {
 /* WOOCOMMERCE */
 
 // Open Public function
-public function wpto_wc_dequeue_scripts( ) {
+public function wpto_wc_cart_fragments( ) {
 
 // Check for empty boxes
 if(!empty($this->wpto_options['wc_cart_fragments'])){
-	
+
 // open function to dequeue scripts
 function wc_script_dequeue() {
 
 // Array - relates to checkboxes
 $wc_dequeue_scripts = array();
-$wc_dequeue_scripts[101] = array("output" => "wc-cart-fragments");  
+$wc_dequeue_scripts[101] = array("output" => "wc-cart-fragments");
 
 // Run dequeue script for each box based on array output
   foreach($wc_dequeue_scripts as $wc_dequeue_script) {
@@ -226,7 +226,6 @@ add_action( 'wp_enqueue_scripts', 'wc_script_dequeue', 100 );
 }
 //Close Public function
 }
-	
 
 
 
@@ -238,7 +237,8 @@ add_action( 'wp_enqueue_scripts', 'wc_script_dequeue', 100 );
 
 
 
-	
+
+
 
 
 

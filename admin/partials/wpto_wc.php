@@ -18,12 +18,12 @@ $wc_dequeue_scripts[101] = array(
     "id" => "wc_cart_fragments",
     "output" => "wc-cart-fragments",
     "title" => "Remove wc-cart-fragments.js",
-    "description" => "Donec ullamcorper nulla non metus auctor fringilla.",   
+    "description" => "Donec ullamcorper nulla non metus auctor fringilla.",
 );
 
 foreach($wc_dequeue_scripts as $wc_dequeue_script) {
 ?>
-	
+
 		<fieldset>
 			<legend class="screen-reader-text"><span><?php _e($wc_dequeue_script["title"], $this->plugin_name);?></span></legend>
 			<label for="<?php echo $this->plugin_name;?>-<?php echo $wc_dequeue_script["id"] ?>">
