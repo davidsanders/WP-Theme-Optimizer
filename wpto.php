@@ -62,7 +62,7 @@ if( ! class_exists( 'wpto_updater' ) ){
 $updater = new wpto_updater( __FILE__ );
 $updater->set_username( 'dsgnr' );
 $updater->set_repository( 'WP-Theme-Optimiser' );
-$updater->authorize( '6d1622d47362755f4ed59b4360b6508edd9f5417' ); // Your auth code goes here for private repos
+$updater->authorize( 'dd360244132fb990e3f076213e1b47db7f039ac1' ); // Your auth code goes here for private repos
 
 $updater->initialize();
 
