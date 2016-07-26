@@ -10,7 +10,7 @@
  * Plugin Name:       WP Theme Optimiser
  * Plugin URI:        www.themeoptimiser.io
  * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Studio Touch (Daniel Hand)
  * Author URI:        https://www.designsbytouch.co.uk
  * License:           GPL-2.0+
@@ -62,9 +62,8 @@ if( ! class_exists( 'wpto_updater' ) ){
 $updater = new wpto_updater( __FILE__ );
 $updater->set_username( 'dsgnr' );
 $updater->set_repository( 'WP-Theme-Optimiser' );
-/*
-	$updater->authorize( 'abcdefghijk1234567890' ); // Your auth code goes here for private repos
-*/
+$updater->authorize( '6d1622d47362755f4ed59b4360b6508edd9f5417' ); // Your auth code goes here for private repos
+
 $updater->initialize();
 
 
