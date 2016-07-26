@@ -198,41 +198,33 @@ class wpto_Public {
 	}
 
 
+/* WOOCOMMERCE */
 
-
-
+// Open Public function
 public function wpto_wc_dequeue_scripts( ) {
 
-	if(!empty($this->wpto_options['wc_cart_fragments'])){
-function wc_script_dequeue() {
+// Check for empty boxes
+if(!empty($this->wpto_options['wc_cart_fragments'])){
 	
+// open function to dequeue scripts
+function wc_script_dequeue() {
 
-	// Unless we're in the store, remove all the cruft!
-	if ( ! is_woocommerce() && ! is_cart() && ! is_checkout() ) {
-		wp_dequeue_script( 'wc-add-payment-method' );
-		wp_dequeue_script( 'wc-lost-password' );
-		wp_dequeue_script( 'wc_price_slider' );
-		wp_dequeue_script( 'wc-single-product' );
-		wp_dequeue_script( 'wc-add-to-cart' );
-		wp_dequeue_script( 'wc-cart-fragments' );
-		wp_dequeue_script( 'wc-credit-card-form' );
-		wp_dequeue_script( 'wc-checkout' );
-		wp_dequeue_script( 'wc-add-to-cart-variation' );
-		wp_dequeue_script( 'wc-single-product' );
-		wp_dequeue_script( 'wc-cart' );
-		wp_dequeue_script( 'wc-chosen' );
-		wp_dequeue_script( 'woocommerce' );
-		wp_dequeue_script( 'prettyPhoto' );
-		wp_dequeue_script( 'prettyPhoto-init' );
-		wp_dequeue_script( 'jquery-blockui' );
-		wp_dequeue_script( 'jquery-placeholder' );
-		wp_dequeue_script( 'jquery-payment' );
-		wp_dequeue_script( 'fancybox' );
-		wp_dequeue_script( 'jqueryui' );
-	}
+// Array - relates to checkboxes
+$wc_dequeue_scripts = array();
+$wc_dequeue_scripts[101] = array("output" => "wc-cart-fragments");  
+
+// Run dequeue script for each box based on array output
+  foreach($wc_dequeue_scripts as $wc_dequeue_script) {
+    wp_dequeue_script( $wc_dequeue_script["output"] );
+  }
+// close function to dequeue scripts
 }
-add_action( 'wp_enqueue_scripts', 'wc_script_dequeue', 99 );
+// Add action to dequeue scripts
+add_action( 'wp_enqueue_scripts', 'wc_script_dequeue', 100 );
+
+//Close check for empty boxes
 }
+//Close Public function
 }
 	
 
