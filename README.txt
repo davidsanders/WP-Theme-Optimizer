@@ -8,4 +8,7 @@ Stable tag: 4.5.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A lightweight plugin to truly clean up your WordPress header. Remove unnecessary information to help reduce files loaded on your site, speed it up and clean up the markup.
+A lightweight plugin to truly clean up your WordPress header. Remove unec
+
+
+== Description ==
