@@ -25,11 +25,30 @@ composer require dsgnr/wp-theme-optimizer
 
 This plugin is currently in the list to be approved for the WordPress plugin repository.
 
+### Features
+
+* Remove CSS and JS versions<br>
+* Remove WP Generator tag<br>
+* Remove OEmbed Links<br>
+* Remove jQuery Migrate<br>
+* Remove emoji-release.js<br>
+* Remove RSD Link<br>
+* Remove RSS feeds<br>
+* Remove wlwmanifest.xml<br>
+* Remove WP JSON link<br>
+* Remove WP Shortlink<br>
+* Remove Next/Previous post links<br>
+* Remove Pingbacks globally<br>
+* Remove Yoast SEO comments in front-end HTML<br>
+* Option to Minify front-end HTML<br>
+
+
 ## Contributing
 
 Contributions are welcome from everyone. If this plugin is missing anything you'd like to see, or have found a bug please tell us!
 
-* <a href="https://github.com/dsgnr/WP-Theme-Optimizer/issues">Submit an issue/</a>
+* <a href="https://github.com/dsgnr/WP-Theme-Optimizer/issues">Submit an issue</a>
 * <a href="mailto:email@danielhand.io">Email Us</a>
+
 
 
