@@ -22,8 +22,8 @@
             <a href="#minify" class="nav-tab"><?php _e('HTML Minify', $this->plugin_name);?></a>
             <a href="#contact" class="nav-tab"><?php _e('Contact', $this->plugin_name);?></a>
 	</h2>
-	
-	
+
+
 
 
 	<form method="post" name="options" action="options.php">
