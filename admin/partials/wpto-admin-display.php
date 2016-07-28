@@ -12,7 +12,7 @@
 	<h2><?php echo esc_html( get_admin_page_title() ); ?></h2>
 
 	<h2 class="nav-tab-wrapper">
-            <a href="#options" class="nav-tab nav-tab-active"><?php _e('Options', $this->plugin_name);?></a>
+            <a href="#options" class="nav-tab nav-tab-active"><?php _e('Theme Options', $this->plugin_name);?></a>
             	<?php	if ( defined('WPSEO_VERSION') ) { ?>
 				<a href="#yoast" class="nav-tab"><?php _e('Yoast SEO', $this->plugin_name);?></a>
 				<?php } ?>

@@ -8,7 +8,8 @@
 ?>
 
 <div id="options" class="wrap metabox-holder columns-4 wpto-metaboxes ">
-
+	<h2><?php esc_attr_e( 'Theme Options', $this->plugin_name ); ?></h2>
+        <p><?php _e('To Add Yoast Options', $this->plugin_name);?></p>
 
 	<!-- remove css and js query string versions -->
 	<div class="options-box">
