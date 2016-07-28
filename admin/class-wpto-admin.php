@@ -60,8 +60,7 @@ class wpto_Admin {
          */
         if ( 'settings_page_wpto' == get_current_screen() -> id ) {
             // Css rules for Color Picker
-            wp_enqueue_style( 'wp-color-picker' );
-            wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/wpto-admin.css', array('wp-color-picker'), $this->version, 'all' );
+            wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/wpto-admin.css', $this->version, 'all' );
         }
 
     }
@@ -86,7 +85,7 @@ class wpto_Admin {
          */
         if ( 'settings_page_wpto' == get_current_screen() -> id ) {
             wp_enqueue_media();
-            wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/wpto-admin.js', array( 'jquery', 'wp-color-picker' ), $this->version, false );
+            wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/wpto-admin.js', array( 'jquery' ), $this->version, false );
         }
 
     }
@@ -173,7 +172,7 @@ class wpto_Admin {
           $valid['wc_cart_fragments'] = (isset($input['wc_cart_fragments']) && !empty($input['wc_cart_fragments'])) ? 1 : 0;
 
 
-// HTML Minify
+		  // HTML Minify
           $valid['html_minify'] = (isset($input['html_minify']) && !empty($input['html_minify'])) ? 1 : 0;
 
         return $valid;

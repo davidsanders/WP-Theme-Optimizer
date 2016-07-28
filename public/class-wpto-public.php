@@ -253,6 +253,7 @@ if (preg_match("/\<html/i",$buffer) == 1 && preg_match("/\<\/html\>/i",$buffer) 
 $buffer = preg_replace($search, $replace, $buffer);
 }
 return $buffer;
+
 }
 ob_start("minify_output");
 

@@ -7,7 +7,7 @@
 */
 ?>
 
-<div id="options" class="wrap metabox-holder columns-4 wpto-metaboxes">
+<div id="options" class="wrap metabox-holder columns-4 wpto-metaboxes ">
 
 
 	<!-- remove css and js query string versions -->
