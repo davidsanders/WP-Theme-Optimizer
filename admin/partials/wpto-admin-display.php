@@ -19,6 +19,8 @@
 //if ( class_exists( 'WooCommerce' ) ) {?>
 <!--<a href="#wc" class="nav-tab"><?php _e('WooCommerce', $this->plugin_name);?></a> -->
 <?php //  } ?>
+	<a href="#minify" class="nav-tab"><?php _e('Minify', $this->plugin_name);?></a>
+
 <!-- <a href="#contact" class="nav-tab"><?php _e('Contact', $this->plugin_name);?></a> -->
   </h2>
 
@@ -52,7 +54,8 @@
 		//WooCommerce
 		$wc_cart_fragments = $options['wc_cart_fragments'];
 
-
+		// HTML Minify
+		$html_minify = $options['html_minify'];
 
 
 
@@ -75,6 +78,7 @@
 			if ( class_exists( 'WooCommerce' ) ) {
 				require_once('wpto_wc.php');
 			}
+		 require_once('wpto_minify.php');
 		 require_once('wpto_contact.php');
 
 		?>

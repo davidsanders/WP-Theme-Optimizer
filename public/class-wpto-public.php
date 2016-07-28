@@ -233,7 +233,31 @@ add_action( 'wp_enqueue_scripts', 'wc_script_dequeue', 100 );
 
 
 
+// 	// HTML Minify
+	public function wpto_html_minify( ) {
+		if(!empty($this->wpto_options['html_minify'])){
 
+function minify_output($buffer)
+{
+$search = array(
+'/\>[^\S ]+/s',
+'/[^\S ]+\</s',
+'/(\s)+/s'
+);
+$replace = array(
+'>',
+'<',
+'\\1'
+);
+if (preg_match("/\<html/i",$buffer) == 1 && preg_match("/\<\/html\>/i",$buffer) == 1) {
+$buffer = preg_replace($search, $replace, $buffer);
+}
+return $buffer;
+}
+ob_start("minify_output");
+
+		}
+	}
 
 
 

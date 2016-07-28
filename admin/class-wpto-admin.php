@@ -173,6 +173,9 @@ class wpto_Admin {
           $valid['wc_cart_fragments'] = (isset($input['wc_cart_fragments']) && !empty($input['wc_cart_fragments'])) ? 1 : 0;
 
 
+// HTML Minify
+          $valid['html_minify'] = (isset($input['html_minify']) && !empty($input['html_minify'])) ? 1 : 0;
+
         return $valid;
     }
 
