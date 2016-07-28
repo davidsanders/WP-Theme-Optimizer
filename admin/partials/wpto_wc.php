@@ -7,7 +7,7 @@
 */
 ?>
 
-<div id="wc" class="wrap metabox-holder columns-2 wp_cbf-metaboxes hidden">
+<div id="wc" class="wrap metabox-holder columns-4 wpto-metaboxes hidden">
 
 	<h2><?php esc_attr_e( 'WooCommerce', $this->plugin_name ); ?></h2>
         <p><?php _e('To Add WC Options', $this->plugin_name);?></p>
@@ -24,14 +24,14 @@ $wc_dequeue_scripts[101] = array(
 foreach($wc_dequeue_scripts as $wc_dequeue_script) {
 ?>
 
-		<fieldset>
+		<div class="options-box">
 			<legend class="screen-reader-text"><span><?php _e($wc_dequeue_script["title"], $this->plugin_name);?></span></legend>
 			<label for="<?php echo $this->plugin_name;?>-<?php echo $wc_dequeue_script["id"] ?>">
 				<input type="checkbox" id="<?php echo $this->plugin_name;?>-<?php echo $wc_dequeue_script["id"] ?>" name="<?php echo $this->plugin_name;?>[<?php echo $wc_dequeue_script["id"] ?>]" value="1" <?php checked($wc_cart_fragments, 1);?>/>
 				<span><?php echo $wc_dequeue_script["title"] ?></span><br/>
 				<span><?php echo $wc_dequeue_script["description"] ?></span>
 			</label>
-		</fieldset>
+		</div>
 <?php
 }
 

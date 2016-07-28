@@ -3,44 +3,45 @@
  * included in this file.
  */
 
+
 /* General */
-.wpto-metaboxes fieldset{
-	min-height:32px;
+
+.wpto-metaboxes .options-box {
+    min-height: 32px;
+    margin-bottom: 2em;
+    padding: 20px 20px 0;
+    border: 1px solid #bbb;
+    background-color: #f1f1f1;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
 }
-input[type=url]{
+input[type=url] {
     margin: 0 0 12px;
 }
 
-
-
 /* Admin */
+
 p.updated {
     background: #fff;
     border-left: 4px solid #7ad03a;
-    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
-    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
     margin: 5px 0 2px;
     padding: 1px 12px;
 }
-
-.field-container{
-    margin-bottom:24px;
+.field-container {
+    margin-bottom: 24px;
 }
-.field-container label{
-    display:block;
-    font-weight:700;
+.field-container label {
+    display: block;
+    font-weight: 700;
 }
-
-input.short{
+input.short {
     border-color: #e35b5b;
 }
-
-
-
- .wpto-admin-menu-items{
-    margin-bottom:32px;
-    line-height:24px;
-  }
- .wpto-admin-menu-items h4{
-    margin-bottom:6px;
-  }
+.wpto-admin-menu-items {
+    margin-bottom: 32px;
+    line-height: 24px;
+}
+.wpto-admin-menu-items h4 {
+    margin-bottom: 6px;
+}
