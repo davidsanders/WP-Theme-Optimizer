@@ -1,5 +1,5 @@
 {
-	"name": "dsgnr/wp-theme-optimizer",
+	"name": "dsgnr/WP-Theme-Optimizer",
 	"description": "Optimize your WordPress theme header by removing excess tags and scripts. Make your site faster and more secure by hiding the fact you are using WordPress.",
 	"keywords": [
 		"wordpress",
