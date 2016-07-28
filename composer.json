@@ -1,0 +1,23 @@
+{
+	"name": "dsgnr/wp-theme-optimizer",
+	"type": "wordpress-plugin",
+	"license": "GPL-2.0+",
+	"description": "Optimize your WordPress theme header by removing excess tags and scripts. Make your site faster and more secure by hiding the fact you are using WordPress.",
+	"homepage": "http://www.wpthemeoptimizer.io",
+	"authors": [{
+		"name": "Daniel Hand",
+		"email": "email@danielhand.io",
+		"homepage": "https://github.com/dsgnr"
+	}],
+	"keywords": [
+		"wordpress"
+	],
+	"support": {
+		"issues": "https://github.com/dsgnr/WP-Theme-Optimizer/issues",
+	},
+	"require": {
+		"php": ">=5.4.0",
+		"composer/installers": "~1.0"
+	}
+
+}
