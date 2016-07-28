@@ -48,3 +48,22 @@ input.short {
 .tab-content {
     width: 65%;
 }
+.options-box {
+    min-height: 52px;
+    margin-bottom: 2em;
+    /* padding: 20px 20px 0; */
+    border: 1px solid #bbb;
+    background-color: #f1f1f1;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+    display: inline-block;
+    width: 100%;
+}
+.options-box h3 {
+    margin: 0;
+    font-size: 1.2em !important;
+    font-weight: 600 !important;
+}
+.options-box label {
+    float: left;
+    width: 75%;
+}
