@@ -9,7 +9,7 @@
  * @wordpress-plugin
  * Plugin Name:       WP Theme Optimiser
  * Plugin URI:        www.themeoptimiser.io
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+ * Description:       Optimize your WordPress theme header by removing excess tags and scripts. Make your site faster and more secure by hiding the fact you are using WordPress.
  * Version:           1.0.1
  * Author:            Studio Touch (Daniel Hand)
  * Author URI:        https://www.designsbytouch.co.uk
