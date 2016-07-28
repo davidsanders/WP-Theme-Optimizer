@@ -72,7 +72,7 @@
                         do_settings_sections($this->plugin_name);
 
 ?>
-<div class="displays">
+<div class="tab-content">
 	<?php
 		 // Include tabs partials
 		 require_once('wpto_options.php');

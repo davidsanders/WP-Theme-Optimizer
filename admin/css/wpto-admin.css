@@ -45,3 +45,6 @@ input.short {
 .wpto-admin-menu-items h4 {
     margin-bottom: 6px;
 }
+.tab-content {
+    width: 65%;
+}
