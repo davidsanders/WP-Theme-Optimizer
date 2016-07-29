@@ -169,7 +169,28 @@ class wpto_Admin {
         $valid['remove_yoast_information'] = (isset($input['remove_yoast_information']) && !empty($input['remove_yoast_information'])) ? 1 : 0;
 
         // WooCommerce
+          $valid['wc_add_payment_method'] = (isset($input['wc_add_payment_method']) && !empty($input['wc_add_payment_method'])) ? 1 : 0;
+          $valid['wc_lost_password'] = (isset($input['wc_lost_password']) && !empty($input['wc_lost_password'])) ? 1 : 0;
+          $valid['wc_price_slider'] = (isset($input['wc_price_slider']) && !empty($input['wc_price_slider'])) ? 1 : 0;
+          $valid['wc_single_product'] = (isset($input['wc_single_product']) && !empty($input['wc_single_product'])) ? 1 : 0;
+          $valid['wc_add_to_cart'] = (isset($input['wc_add_to_cart']) && !empty($input['wc_add_to_cart'])) ? 1 : 0;
           $valid['wc_cart_fragments'] = (isset($input['wc_cart_fragments']) && !empty($input['wc_cart_fragments'])) ? 1 : 0;
+          $valid['wc_credit_card_form'] = (isset($input['wc_credit_card_form']) && !empty($input['wc_credit_card_form'])) ? 1 : 0;
+          $valid['wc_checkout'] = (isset($input['wc_checkout']) && !empty($input['wc_checkout'])) ? 1 : 0;
+          $valid['wc_add_to_cart_variation'] = (isset($input['wc_add_to_cart_variation']) && !empty($input['wc_add_to_cart_variation'])) ? 1 : 0;
+          $valid['wc_single_product'] = (isset($input['wc_single_product']) && !empty($input['wc_single_product'])) ? 1 : 0;
+          $valid['wc_cart'] = (isset($input['wc_cart']) && !empty($input['wc_cart'])) ? 1 : 0;
+          $valid['wc_checkout'] = (isset($input['wc_checkout']) && !empty($input['wc_checkout'])) ? 1 : 0;
+          $valid['wc_chosen'] = (isset($input['wc_chosen']) && !empty($input['wc_chosen'])) ? 1 : 0;
+          $valid['wc_checkout'] = (isset($input['wc_checkout']) && !empty($input['wc_checkout'])) ? 1 : 0;
+          $valid['woocommerce'] = (isset($input['woocommerce']) && !empty($input['woocommerce'])) ? 1 : 0;
+          $valid['prettyPhoto'] = (isset($input['prettyPhoto']) && !empty($input['prettyPhoto'])) ? 1 : 0;
+          $valid['prettyPhoto_init'] = (isset($input['prettyPhoto_init']) && !empty($input['prettyPhoto_init'])) ? 1 : 0;
+          $valid['jquery_blockui'] = (isset($input['jquery_blockui']) && !empty($input['jquery_blockui'])) ? 1 : 0;
+          $valid['jquery_placeholder'] = (isset($input['jquery_placeholder']) && !empty($input['jquery_placeholder'])) ? 1 : 0;
+          $valid['jquery_payment'] = (isset($input['jquery_payment']) && !empty($input['jquery_payment'])) ? 1 : 0;
+          $valid['fancybox'] = (isset($input['fancybox']) && !empty($input['fancybox'])) ? 1 : 0;
+          $valid['jqueryui'] = (isset($input['jqueryui']) && !empty($input['jqueryui'])) ? 1 : 0;
 
 
 		  // HTML Minify

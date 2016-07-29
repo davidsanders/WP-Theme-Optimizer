@@ -13,13 +13,10 @@
 
 	<h2 class="nav-tab-wrapper">
             <a href="#options" class="nav-tab nav-tab-active"><?php _e('Theme Options', $this->plugin_name);?></a>
-            	<?php	// if ( defined('WPSEO_VERSION') ) { ?>
-				<!-- <a href="#yoast" class="nav-tab"><?php _e('Yoast SEO', $this->plugin_name);?></a> -->
-				<?php // } ?>
-				<?php //	if ( class_exists( 'WooCommerce' ) ) { ?>
-				<!-- <a href="#wc" class="nav-tab"><?php _e('WooCommerce', $this->plugin_name);?></a> -->
-				<?php // } ?>
-        <!--     <a href="#minify" class="nav-tab"><?php _e('HTML Minify', $this->plugin_name);?></a> -->
+            	
+				<?php if ( class_exists( 'WooCommerce' ) ) { ?>
+				<a href="#wc" class="nav-tab"><?php _e('WooCommerce', $this->plugin_name);?></a> 
+				<?php  } ?>
           <!--  <a href="#contact" class="nav-tab"><?php _e('Contact', $this->plugin_name);?></a> -->
 	</h2>
 
@@ -54,7 +51,26 @@
 		$remove_yoast_information = $options['remove_yoast_information'];
 
 		//WooCommerce
+		$wc_add_payment_method = $options['wc_add_payment_method'];
+		$wc_lost_password = $options['wc_lost_password'];
+		$wc_price_slider = $options['wc_price_slider'];
+		$wc_single_product = $options['wc_single_product'];
+		$wc_add_to_cart = $options['wc_add_to_cart'];
 		$wc_cart_fragments = $options['wc_cart_fragments'];
+		$wc_credit_card_form = $options['wc_credit_card_form'];
+		$wc_checkout = $options['wc_checkout'];
+		$wc_add_to_cart_variation = $options['wc_add_to_cart_variation'];
+		$wc_single_product = $options['wc_single_product'];
+		$wc_cart = $options['wc_cart'];
+		$wc_chosen = $options['wc_chosen'];
+		$woocommerce = $options['woocommerce'];
+		$prettyPhoto = $options['prettyPhoto'];
+		$prettyPhoto_init = $options['prettyPhoto_init'];
+		$jquery_blockui = $options['jquery_blockui'];
+		$jquery_placeholder = $options['jquery_placeholder'];
+		$jquery_payment = $options['jquery_payment'];
+		$fancybox = $options['fancybox'];
+		$jqueryui = $options['jqueryui'];
 
 		// HTML Minify
 		$html_minify = $options['html_minify'];
@@ -76,13 +92,10 @@
 	<?php
 		 // Include tabs partials
 		 require_once('wpto_options.php');
-			if ( defined('WPSEO_VERSION') ) {
- 				require_once('wpto_yoast.php');
- 			}
+
 			if ( class_exists( 'WooCommerce' ) ) {
 				require_once('wpto_wc.php');
 			}
-		 require_once('wpto_minify.php');
 		 require_once('wpto_contact.php');
 
 		?>
