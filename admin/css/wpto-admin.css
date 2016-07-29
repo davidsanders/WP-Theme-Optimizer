@@ -7,13 +7,18 @@
 /* General */
 
 .wpto-metaboxes .options-box {
-    min-height: 32px;
-    margin-bottom: 2em;
-    padding: 20px 20px 0;
-    border: 1px solid #bbb;
-    background-color: #f1f1f1;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+min-height: 52px;
+margin-bottom: 1em;
+padding: 12px 15px;
+border: 1px solid #bbb;
+background-color: #f1f1f1;
+box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+position: relative;
+display: inline-block;
+width: 100%;
 }
+.wpto-metaboxes .options-box p { /* margin: 0.5em 0 1em; */display: table-cell;
+    vertical-align: middle;}
 input[type=url] {
     margin: 0 0 12px;
 }
@@ -48,20 +53,13 @@ input.short {
 .tab-content {
     width: 65%;
 }
-.options-box {
-    min-height: 52px;
-    margin-bottom: 2em;
-    /* padding: 20px 20px 0; */
-    border: 1px solid #bbb;
-    background-color: #f1f1f1;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
-    display: inline-block;
-    width: 100%;
-}
+
 .options-box h3 {
-    margin: 0;
-    font-size: 1.2em !important;
-    font-weight: 600 !important;
+margin: 0px 0px 10px 0px;
+font-size: 1.2em !important;
+font-weight: 600 !important;
+vertical-align: middle;
+clear:both;
 }
 .options-box label {
     float: left;
@@ -69,7 +67,12 @@ input.short {
 }
 
 
-.options-checkbox { display:inline-block; position:relative;}
+.options-checkbox {   padding: 0;
+   margin:0;
+   vertical-align: bottom;
+   position: absolute;
+   top: 30%;
+right:8%}
 
 .options-checkbox input[type=checkbox] {
     margin: 0px;
