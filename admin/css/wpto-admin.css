@@ -17,6 +17,8 @@ position: relative;
 display: inline-block;
 width: 100%;
 }
+
+h2 { font-size: 1.6em;}
 .wpto-metaboxes .options-box p { /* margin: 0.5em 0 1em; */display: table-cell;
     vertical-align: middle;}
 input[type=url] {

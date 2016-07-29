@@ -8,8 +8,8 @@
 ?>
 
 <div id="options" class="wrap metabox-holder columns-4 wpto-metaboxes ">
-	<h2><?php esc_attr_e( 'Theme Options', $this->plugin_name ); ?></h2>
-        <p><?php _e('To Add Yoast Options', $this->plugin_name);?></p>
+	<h1><?php esc_attr_e( 'Theme Options', $this->plugin_name ); ?></h1>
+        <p><?php _e('Welcome to the WP Theme Optimizer plugin. Use this page to activate or deactivate various settings which can clean up your WordPress code, made it faster by reducing scripts loaded and more secure by removing some information about your WordPress installation.', $this->plugin_name);?></p>
 
 
 <h2>Theme Links</h2>
