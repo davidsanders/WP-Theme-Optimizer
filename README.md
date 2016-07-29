@@ -38,7 +38,6 @@ This plugin is currently in the list to be approved for the WordPress plugin rep
 * Remove WP JSON link<br>
 * Remove WP Shortlink<br>
 * Remove Next/Previous post links<br>
-* Remove Pingbacks globally<br>
 * Remove Yoast SEO comments in front-end HTML<br>
 * Option to Minify front-end HTML<br>
 

@@ -36,7 +36,6 @@ Improve your WordPress SEO: Write better content and have a fully optimized Word
 	* Remove WP JSON link
 	* Remove WP Shortlink
 	* Remove Next/Previous post links
-	* Remove Pingbacks globally
 	* Remove Yoast SEO comments in front-end HTML
 	* Option to Minify front-end HTML
 
