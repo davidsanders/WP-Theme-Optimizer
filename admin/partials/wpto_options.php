@@ -14,6 +14,7 @@
 
 <h2>Theme Links</h2>
 
+
 <!-- Remove oEmbed -->
 <div class="options-box">
 	<legend class="screen-reader-text"><span><?php _e('Remove OEmbed Links', $this->plugin_name);?></span></legend>
@@ -21,10 +22,13 @@
 		<h3><?php esc_attr_e('Remove OEmbed Links', $this->plugin_name);?></h3>
 		<p>OEmbed provides an easy way to embed content from one site to another. If you do not need it, disable it here.</p>
 	</label>
+	<div class="checkbox-area">
 	<div class="options-checkbox">
-	<input type="checkbox" id="<?php echo $this->plugin_name;?>-remove_oembed" name="<?php echo $this->plugin_name;?>[remove_oembed]" value="1" <?php checked($remove_oembed, 1);?>/>
+	<input type="checkbox" id="<?php echo $this->plugin_name;?>-remove_oembed" name="<?php echo $this->plugin_name;?>[remove_oembed]" value="1" <?php checked($remove_rsd_link, 1);?>/>
 </div>
 </div>
+</div>
+
 
 <!-- Remove RSD Link -->
 <div class="options-box">
@@ -34,7 +38,8 @@
 		<p>Are you editing your WordPress blog using your browser? Then you are not using a blog client and this link can probably be removed by disabling it here.</p>
 	</label>
 	<div class="options-checkbox">
-	<input type="checkbox" id="<?php echo $this->plugin_name;?>-remove_rsd_link" name="<?php echo $this->plugin_name;?>[remove_rsd_link]" value="1" <?php checked($remove_rsd_link, 1);?>/>
+	<input type="checkbox" class="checkbox" id="<?php echo $this->plugin_name;?>-remove_rsd_link" name="<?php echo $this->plugin_name;?>[remove_rsd_link]" value="1" <?php checked($remove_rsd_link, 1);?>/>
+	<span class="onoffswitch-inner"></span>
 </div>
 </div>
 

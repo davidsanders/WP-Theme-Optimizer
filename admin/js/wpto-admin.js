@@ -35,6 +35,17 @@
 
 
 
+											 $('.options-checkbox').click(function() {
+	     $('.checkbox').toggle();
+	     if ($('#content:visible').size() != 0)
+	     {
+	          $(this).addClass('active');
+	     }
+	     else
+	     {
+	          $(this).removeClass('active');
+	     }
+	 });
 
 
 		// Tabs on load
