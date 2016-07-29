@@ -187,6 +187,7 @@ class wpto {
 		$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_oembed');
 		$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_jquery_migrate');
 		$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_emoji_release');
+		$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_recent_comments_css');
 		$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_rsd_link');
 		$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_rss_feed');
 		$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_wlwmanifest');

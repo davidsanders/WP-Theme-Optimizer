@@ -38,6 +38,7 @@
 			$remove_oembed = $options['remove_oembed'];
 			$remove_jquery_migrate = $options['remove_jquery_migrate'];
 			$remove_emoji_release = $options['remove_emoji_release'];
+			$remove_recent_comments_css = $options['remove_recent_comments_css'];
 			$remove_rsd_link = $options['remove_rsd_link'];
 			$remove_rss_feed = $options['remove_rss_feed'];
 			$remove_wlwmanifest = $options['remove_wlwmanifest'];
