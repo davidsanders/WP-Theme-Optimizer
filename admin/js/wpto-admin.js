@@ -13,25 +13,25 @@
                        $showChild = $(".show-child-if-checked"),
 
                        // Media vars
-                       frame,
-                       imgUploadButton = $tabBoxes.find( '#upload_login_logo_button' ),
-                       imgContainer = $tabBoxes.find( '#upload_logo_preview' ),
-                       imgIdInput = $tabBoxes.find( '#login_logo_id' ),
-                       imgPreview = $tabBoxes.find('#upload_logo_preview'),
-                       imgDelButton = $tabBoxes.find('#wpto-delete_logo_button')/*,
+                     //  frame,
+                      // imgUploadButton = $tabBoxes.find( '#upload_login_logo_button' ),
+                     //  imgContainer = $tabBoxes.find( '#upload_logo_preview' ),
+                     //  imgIdInput = $tabBoxes.find( '#login_logo_id' ),
+                     //  imgPreview = $tabBoxes.find('#upload_logo_preview'),
+                     //  imgDelButton = $tabBoxes.find('#wpto-delete_logo_button')/*,
                        // Color Pickers Inputs
-                       colorPickerInputs = $tabBoxes.find( '.wpto-color-picker' ),
+                //       colorPickerInputs = $tabBoxes.find( '.wpto-color-picker' ),
 
                        // Smtp
-                       hideBtn = $(".wp-hide-pw"),
-                       hideBtnIcon = hideBtn.find('.dashicons'),
-                       hideBtnText = hideBtn.find('.text'),
-                       passInput = hideBtn.prev('input'),
-                       testEmailBtn = $('#wpto-send-smtp-test'),
-                       smtpResults = $('.smtp-ajax-results'),
-                       smtpResultsContent = smtpResults.find('.smtp-results-content'),
-                       debugLogButton = smtpResults.find('.button'),
-                       debugLog = smtpResults.find('.smtp-results-debug')*/;
+                 //      hideBtn = $(".wp-hide-pw"),
+                 //      hideBtnIcon = hideBtn.find('.dashicons'),
+                 //      hideBtnText = hideBtn.find('.text'),
+                 //      passInput = hideBtn.prev('input'),
+                 //      testEmailBtn = $('#wpto-send-smtp-test'),
+                 //      smtpResults = $('.smtp-ajax-results'),
+                 //      smtpResultsContent = smtpResults.find('.smtp-results-content'),
+                 //      debugLogButton = smtpResults.find('.button'),
+                 //      debugLog = smtpResults.find('.smtp-results-debug')*/;
 
 
 
