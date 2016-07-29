@@ -18,7 +18,7 @@
                        imgContainer = $tabBoxes.find( '#upload_logo_preview' ),
                        imgIdInput = $tabBoxes.find( '#login_logo_id' ),
                        imgPreview = $tabBoxes.find('#upload_logo_preview'),
-                       imgDelButton = $tabBoxes.find('#wpto-delete_logo_button'),
+                       imgDelButton = $tabBoxes.find('#wpto-delete_logo_button')/*,
                        // Color Pickers Inputs
                        colorPickerInputs = $tabBoxes.find( '.wpto-color-picker' ),
 
@@ -31,21 +31,10 @@
                        smtpResults = $('.smtp-ajax-results'),
                        smtpResultsContent = smtpResults.find('.smtp-results-content'),
                        debugLogButton = smtpResults.find('.button'),
-                       debugLog = smtpResults.find('.smtp-results-debug');
+                       debugLog = smtpResults.find('.smtp-results-debug')*/;
 
 
 
-											 $('.options-checkbox').click(function() {
-	     $('.checkbox').toggle();
-	     if ($('#content:visible').size() != 0)
-	     {
-	          $(this).addClass('active');
-	     }
-	     else
-	     {
-	          $(this).removeClass('active');
-	     }
-	 });
 
 
 		// Tabs on load
@@ -81,7 +70,7 @@
 		    }
 		});
 
-                // Show/Hide password for smtp
+             /*   // Show/Hide password for smtp
                 hideBtn.on('click', function(e){
                     e.preventDefault();
                     if(hideBtnText.html() === 'Show'){
@@ -183,7 +172,7 @@
                     imgPreview.find( 'img' ).attr( 'src', '' );
                     imgPreview.addClass('hidden');
                     imgUploadButton.removeClass( 'hidden' );
-                });
+                }); */
 
 	});
 

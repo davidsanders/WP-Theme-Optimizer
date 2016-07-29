@@ -14,43 +14,39 @@
 
 <h2>Theme Links</h2>
 
-
 <!-- Remove oEmbed -->
-<div class="options-box">
+<div class="options-box remove_oembed">
 	<legend class="screen-reader-text"><span><?php _e('Remove OEmbed Links', $this->plugin_name);?></span></legend>
 	<label for="<?php echo $this->plugin_name;?>-remove_oembed">
 		<h3><?php esc_attr_e('Remove OEmbed Links', $this->plugin_name);?></h3>
 		<p>OEmbed provides an easy way to embed content from one site to another. If you do not need it, disable it here.</p>
 	</label>
-	<div class="checkbox-area">
-	<div class="options-checkbox">
-	<input type="checkbox" id="<?php echo $this->plugin_name;?>-remove_oembed" name="<?php echo $this->plugin_name;?>[remove_oembed]" value="1" <?php checked($remove_rsd_link, 1);?>/>
+	<div class="options-checkbox remove_oembed">
+	<input type="checkbox" id="<?php echo $this->plugin_name;?>-remove_oembed" name="<?php echo $this->plugin_name;?>[remove_oembed]" value="1" <?php checked($remove_oembed, 1);?>/>
+	<span class="checkbox-disc" ></span>
 </div>
 </div>
-</div>
-
 
 <!-- Remove RSD Link -->
-<div class="options-box">
+<div class="options-box remove_rsd_link">
 	<legend class="screen-reader-text"><span><?php _e('Remove RSD Link', $this->plugin_name);?></span></legend>
 	<label for="<?php echo $this->plugin_name;?>-remove_rsd_link">
 		<h3><?php esc_attr_e('Remove RSD Link', $this->plugin_name);?></h3>
 		<p>Are you editing your WordPress blog using your browser? Then you are not using a blog client and this link can probably be removed by disabling it here.</p>
 	</label>
-	<div class="options-checkbox">
-	<input type="checkbox" class="checkbox" id="<?php echo $this->plugin_name;?>-remove_rsd_link" name="<?php echo $this->plugin_name;?>[remove_rsd_link]" value="1" <?php checked($remove_rsd_link, 1);?>/>
-	<span class="onoffswitch-inner"></span>
+	<div class="options-checkbox remove_rsd_link">
+	<input type="checkbox" id="<?php echo $this->plugin_name;?>-remove_rsd_link" name="<?php echo $this->plugin_name;?>[remove_rsd_link]" value="1" <?php checked($remove_rsd_link, 1);?>/>
 </div>
 </div>
 
 <!-- Remove RSS Feeds -->
-<div class="options-box">
+<div class="options-box remove_rss_feed">
 	<legend class="screen-reader-text"><span><?php _e('Remove RSS feeds', $this->plugin_name);?></span></legend>
 	<label for="<?php echo $this->plugin_name;?>-remove_rss_feed">
 		<h3><?php esc_attr_e('Remove RSS feeds', $this->plugin_name);?></h3>
 		<p>Are you using RSS feeds? If not, you can turn them off here.</p>
 	</label>
-	<div class="options-checkbox">
+	<div class="options-checkbox remove_rss_feed">
 	<input type="checkbox" id="<?php echo $this->plugin_name;?>-remove_rss_feed" name="<?php echo $this->plugin_name;?>[remove_rss_feed]" value="1" <?php checked($remove_rss_feed, 1);?>/>
 </div>
 </div>
