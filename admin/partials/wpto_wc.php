@@ -10,7 +10,7 @@
 <div id="wc" class="wrap metabox-holder columns-4 wpto-metaboxes hidden">
 
 	<h2><?php esc_attr_e( 'WooCommerce', $this->plugin_name ); ?></h2>
-        <p><?php _e('To Add WC Options', $this->plugin_name);?></p>
+        <p><?php _e('Here you can disable a number of scripts that ships with WooCommerce. Please check to make sure everything works after disabling scripts as some are required. Even scripts that are disabled will reappear on WooCommerce pages.', $this->plugin_name);?></p>
 
 <!-- WOOCOMMERCE Array - doesn't work properly so removing it for now! 
 	<?php
