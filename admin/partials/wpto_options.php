@@ -139,7 +139,7 @@
 </div>
 </div>
 
-<!-- Remove Pingbacks globally -->
+<!-- Remove Pingbacks globally 
 <div class="options-box">
 	<legend class="screen-reader-text"><span><?php _e('Remove Pingbacks globally', $this->plugin_name);?></span></legend>
 	<label for="<?php echo $this->plugin_name;?>-remove_pingback">
@@ -149,7 +149,7 @@
 	<div class="options-checkbox">
 	<input type="checkbox" id="<?php echo $this->plugin_name;?>-remove_pingback" name="<?php echo $this->plugin_name;?>[remove_pingback]" value="1" <?php checked($remove_pingback, 1);?>/>
 </div>
-</div>
+</div>-->
 
 
 <h2>Miscellaneous</h2>
