@@ -260,6 +260,6 @@ foreach($wc_dequeue_scripts as $wc_dequeue_script) {
 	<div class="options-checkbox">
 	<input type="checkbox" id="<?php echo $this->plugin_name;?>-jqueryui" name="<?php echo $this->plugin_name;?>[jqueryui]" value="1" <?php checked($jqueryui, 1);?>/>
 </div>
-</div
+</div>
 
 </div>

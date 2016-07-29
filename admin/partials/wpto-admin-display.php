@@ -96,7 +96,6 @@
 			if ( class_exists( 'WooCommerce' ) ) {
 				require_once('wpto_wc.php');
 			}
-		 require_once('wpto_contact.php');
 
 		?>
 </div>
