@@ -30,6 +30,7 @@ Improve your WordPress SEO: Write better content and have a fully optimized Word
 	* Remove OEmbed Links
 	* Remove jQuery Migrate
 	* Remove emoji-release.js
+	* Remove recent comments inline CSS
 	* Remove RSD Link
 	* Remove RSS feeds
 	* Remove wlwmanifest.xml

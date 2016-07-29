@@ -32,6 +32,7 @@ This plugin is currently in the list to be approved for the WordPress plugin rep
 * Remove OEmbed Links<br>
 * Remove jQuery Migrate<br>
 * Remove emoji-release.js<br>
+* Remove recent comments inline CSS<br>
 * Remove RSD Link<br>
 * Remove RSS feeds<br>
 * Remove wlwmanifest.xml<br>
