@@ -152,7 +152,7 @@
 </div>
 </div>
 
-<!-- Remove Pingbacks globally 
+<!-- Remove Pingbacks globally
 <div class="options-box">
 	<legend class="screen-reader-text"><span><?php _e('Remove Pingbacks globally', $this->plugin_name);?></span></legend>
 	<label for="<?php echo $this->plugin_name;?>-remove_pingback">
@@ -179,7 +179,7 @@
 	</div>
 </div>
 
-<?php if ( class_exists( 'WooCommerce' ) ) {?>
+<?php if (is_plugin_active('wordpress-seo/wp-seo.php')) { ?>
 <!-- Remove Yoast SEO comments -->
 <div class="options-box">
 	<legend class="screen-reader-text"><span><?php _e('Remove Yoast Information', $this->plugin_name);?></span></legend>
@@ -204,23 +204,6 @@
 	<input type="checkbox" id="<?php echo $this->plugin_name;?>-html_minify" name="<?php echo $this->plugin_name;?>[html_minify]" value="1" <?php checked($html_minify, 1);?>/>
 </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </div>
