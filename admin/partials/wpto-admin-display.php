@@ -12,12 +12,13 @@
 	<h2><?php echo esc_html( get_admin_page_title() ); ?></h2>
 
 	<h2 class="nav-tab-wrapper">
-            <a href="#options" class="nav-tab nav-tab-active"><?php _e('Theme Options', $this->plugin_name);?></a>
-            	
-				<?php if ( class_exists( 'WooCommerce' ) ) { ?>
-				<a href="#wc" class="nav-tab"><?php _e('WooCommerce', $this->plugin_name);?></a> 
-				<?php  } ?>
-          <!--  <a href="#contact" class="nav-tab"><?php _e('Contact', $this->plugin_name);?></a> -->
+		<a href="#theme_scripts" class="nav-tab nav-tab-active"><?php _e('Theme Scripts', $this->plugin_name);?></a>
+		<a href="#theme_links" class="nav-tab"><?php _e('Theme Tags', $this->plugin_name);?></a>
+		<a href="#misc" class="nav-tab"><?php _e('Misc Settings', $this->plugin_name);?></a>
+<?php if ( class_exists( 'WooCommerce' ) ) { ?>
+		<a href="#wc" class="nav-tab"><?php _e('WooCommerce', $this->plugin_name);?></a>
+<?php  } ?>
+<!--  <a href="#contact" class="nav-tab"><?php _e('Contact', $this->plugin_name);?></a> -->
 	</h2>
 
 
@@ -86,23 +87,24 @@
 			*
 			*/
 			settings_fields($this->plugin_name);
-                        do_settings_sections($this->plugin_name);
+			do_settings_sections($this->plugin_name);
 
 ?>
 <div class="tab-content">
 	<?php
 		 // Include tabs partials
-		 require_once('wpto_options.php');
+		 require_once('wpto_theme_scripts.php');
+		 require_once('wpto_theme_links.php');
+		 require_once('wpto_misc.php');
 
 			if ( class_exists( 'WooCommerce' ) ) {
 				require_once('wpto_wc.php');
 			}
 
 		?>
+		<?php submit_button(__('Save all changes', $this->plugin_name), 'primary','submit', TRUE); ?>
+
 </div>
-		<p class="submit">
-            <?php submit_button(__('Save all changes', $this->plugin_name), 'primary','submit', TRUE); ?>
-        </p>
 
     </form>
 
