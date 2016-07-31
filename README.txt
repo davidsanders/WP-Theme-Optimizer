@@ -22,6 +22,10 @@ Improve your WordPress SEO: Write better content and have a fully optimized Word
 
 == Changelog ==
 
+= 1.0.1 =
+
+* Fixed a few bugs and updated the documentation to make it clearer.
+
 = 1.0.0 =
 
 * Initial release!
