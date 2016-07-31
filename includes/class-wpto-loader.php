@@ -1,8 +1,9 @@
+
 <?php
 /**
 * @link              https://www.designsbytouch.co.uk
 * @since             1.0.0
-* @package           Wp_Theme_Optimiser
+* @package           Wp_Theme_Optimizer
 */
 class wpto_Loader {
 

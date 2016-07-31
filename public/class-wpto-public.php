@@ -3,7 +3,7 @@
 /**
 * @link              https://www.designsbytouch.co.uk
 * @since             1.0.0
-* @package           Wp_Theme_Optimiser
+* @package           Wp_Theme_Optimizer
 */
 class wpto_Public {
 
@@ -105,16 +105,16 @@ class wpto_Public {
 	// Remove recent comments
 		public function wpto_remove_recent_comments_css( ) {
 		if(!empty($this->wpto_options['remove_recent_comments_css'])){
-function remove_recent_comments_style() {  
-  global $wp_widget_factory;  
+function remove_recent_comments_style() {
+  global $wp_widget_factory;
   remove_action( 'wp_head', array( $wp_widget_factory->widgets['WP_Widget_Recent_Comments'], 'recent_comments_style' ) );
-}  
+}
 add_action( 'widgets_init', 'remove_recent_comments_style' );
 
 		}
 	}
-	
-	
+
+
 	// Remove RSD Link
 	public function wpto_remove_rsd_link( ) {
 		if(!empty($this->wpto_options['remove_rsd_link'])){
@@ -211,7 +211,7 @@ add_action( 'widgets_init', 'remove_recent_comments_style' );
 	}
 
 
-/* WOOCOMMERCE 
+/* WOOCOMMERCE
 
 // Open Public function
 public function wpto_wc_cart_fragments( ) {

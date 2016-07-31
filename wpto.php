@@ -4,18 +4,18 @@
  *
  * @link              https://www.designsbytouch.co.uk
  * @since             1.0.0
- * @package           Wp_Theme_Optimiser
+ * @package           Wp_Theme_Optimizer
  *
  * @wordpress-plugin
- * Plugin Name:       WP Theme Optimiser
- * Plugin URI:        www.themeoptimiser.io
- * Description:       Optimize your WordPress theme header by removing excess tags and scripts. Make your site faster and more secure by hiding the fact you are using WordPress.
+ * Plugin Name:       WP Theme Optimizer
+ * Plugin URI:        www.themeoptimizer.io
+ * Description:       Optimize your WordPress theme header by removing excess tags and scripts. Make your site faster and more secure by hiding WordPress tags.
  * Version:           1.0.1
  * Author:            Studio Touch (Daniel Hand)
  * Author URI:        https://www.designsbytouch.co.uk
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain:       wp-theme-optimiser
+ * Text Domain:       wp-theme-optimizer
  * Domain Path:       /languages
  */
 

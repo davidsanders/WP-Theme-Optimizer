@@ -3,7 +3,7 @@
 /**
 * @link              https://www.designsbytouch.co.uk
 * @since             1.0.0
-* @package           Wp_Theme_Optimiser
+* @package           Wp_Theme_Optimizer
 */
 class wpto_Admin {
 
@@ -105,7 +105,7 @@ class wpto_Admin {
          *        Administration Menus: http://codex.wordpress.org/Administration_Menus
          *
          */
-        $plugin_screen_hook_suffix = add_options_page( __('WP Theme Optimiser', $this->plugin_name ), 'WP Theme Optimiser', 'manage_options', $this->plugin_name, array($this, 'display_plugin_setup_page')
+        $plugin_screen_hook_suffix = add_options_page( __('WP Theme Optimizer', $this->plugin_name ), 'WP Theme Optimizer', 'manage_options', $this->plugin_name, array($this, 'display_plugin_setup_page')
         );
     }
 
