@@ -25,6 +25,9 @@ Improve your WordPress SEO: Write better content and have a fully optimized Word
 = 1.0.1 =
 
 * Fixed a few bugs and updated the documentation to make it clearer.
+* Reorganized tabs to make navigation easier.
+* Added activate/deactivate all button.
+* Changed spellings to be consistent between UK/US spellings.
 
 = 1.0.0 =
 
@@ -43,6 +46,3 @@ Improve your WordPress SEO: Write better content and have a fully optimized Word
 	* Remove Next/Previous post links
 	* Remove Yoast SEO comments in front-end HTML
 	* Option to Minify front-end HTML
-
-
-
