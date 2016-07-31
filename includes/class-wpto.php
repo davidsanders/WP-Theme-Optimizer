@@ -198,6 +198,8 @@ class wpto {
 $this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_yoast_information');
 
 // WooCommerce
+ if ( class_exists( 'WooCommerce' ) ) {
+
 $this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_wc_add_payment_method' );
 $this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_wc_lost_password' );
 $this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_wc_price_slider' );
@@ -218,7 +220,7 @@ $this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_jquery_pla
 $this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_jquery_payment' );
 $this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_fancybox' );
 $this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_jqueryui' );
-
+}
 
 
 
