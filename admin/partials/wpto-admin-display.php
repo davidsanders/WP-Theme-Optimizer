@@ -77,12 +77,7 @@
 		// HTML Minify
 		$html_minify = $options['html_minify'];
 
-
-
-
-
-
-				/*
+			/*
 			* Set up hidden fields
 			*
 			*/
@@ -91,7 +86,7 @@
 
 ?>
 <div class="tab-content">
-	<?php
+		<?php
 		 // Include tabs partials
 		 require_once('wpto_theme_scripts.php');
 		 require_once('wpto_theme_links.php');
