@@ -10,7 +10,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Improve your WordPress SEO: Write better content and have a fully optimized WordPress site using Yoast SEO plugin.
+Optimize your WordPress theme header by removing excess tags and scripts. Make your site faster and more secure by hiding WordPress tags.
 
 
 == Installation ==
