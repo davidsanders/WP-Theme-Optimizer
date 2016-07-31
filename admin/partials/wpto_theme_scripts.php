@@ -8,12 +8,12 @@
 ?>
 
 <div id="theme_scripts" class="wrap metabox-holder columns-4 wpto-metaboxes ">
-	<h1><?php esc_attr_e( 'Theme Options', $this->plugin_name ); ?></h1>
+	<h1><?php esc_attr_e( 'Theme Scripts', $this->plugin_name ); ?></h1>
         <p><?php _e('Welcome to the WP Theme Optimizer plugin. Use this page to activate or deactivate various settings which can clean up your WordPress code, made it faster by reducing scripts loaded and more secure by removing some information about your WordPress installation.', $this->plugin_name);?></p>
 
+				<input type="checkbox" class="all"/>
+				<h3 class="activate-label"><?php esc_attr_e('Activate/Deactivate All', $this->plugin_name);?></h3>
 
-
-<h2>Theme Scripts</h2>
 
 <!-- remove css and js query string versions -->
 <div class="options-box">

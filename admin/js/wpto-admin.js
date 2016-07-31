@@ -174,6 +174,16 @@
                     imgUploadButton.removeClass( 'hidden' );
                 }); */
 
+
+								    $('.all').click(function() {
+								        var $checkboxes = $(this).siblings().find('input[type=checkbox]');
+								        $checkboxes.prop('checked', $(this).is(':checked'));
+								    });
+
+
+
+
+
 	});
 
 })( jQuery );

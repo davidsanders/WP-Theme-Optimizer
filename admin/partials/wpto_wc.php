@@ -11,8 +11,11 @@
 
 	<h2><?php esc_attr_e( 'WooCommerce', $this->plugin_name ); ?></h2>
         <p><?php _e('Here you can disable a number of scripts that ships with WooCommerce. Please check to make sure everything works after disabling scripts as some are required. Even scripts that are disabled will reappear on WooCommerce pages.', $this->plugin_name);?></p>
+				<input type="checkbox" class="all"/>
+				<h3 class="activate-label"><?php esc_attr_e('Activate/Deactivate All', $this->plugin_name);?></h3>
 
-<!-- WOOCOMMERCE Array - doesn't work properly so removing it for now! 
+
+<!-- WOOCOMMERCE Array - doesn't work properly so removing it for now!
 	<?php
 $wc_dequeue_scripts = array();
 $wc_dequeue_scripts[101] = array(
