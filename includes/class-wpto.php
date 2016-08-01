@@ -75,6 +75,7 @@ class wpto {
 		$this->set_locale();
 		$this->define_admin_hooks();
 		$this->define_public_hooks();
+		$this->remove_cssjs_ver();
 
 	}
 
@@ -174,6 +175,13 @@ class wpto {
 	 * @since    1.0.0
 	 * @access   private
 	 */
+	 private function remove_cssjs_ver() {
+		$plugin_public = new wpto_Public( $this->get_plugin_name(), $this->get_version());
+		$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_cssjs_ver');
+	}
+	
+	
+	
 	private function define_public_hooks() {
 
 		$plugin_public = new wpto_Public( $this->get_plugin_name(), $this->get_version());
@@ -182,7 +190,7 @@ class wpto {
 		// $this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
 
 
-		$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_cssjs_ver');
+	//	$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_cssjs_ver');
 		$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_wp_version_number');
 		$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_oembed');
 		$this->loader->add_action( 'after_setup_theme', $plugin_public, 'wpto_remove_jquery_migrate');
