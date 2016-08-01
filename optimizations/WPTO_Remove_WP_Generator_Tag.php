@@ -10,8 +10,6 @@ class WPTO_Remove_WP_Generator_Tag extends WPTO_Optimization_Base {
 
 	public function __construct() {
 
-		parent::__construct();
-
 		$this->title       = __( 'Remove WP Generator Tag', 'wpto' );
 		$this->description = __( 'It can be considered a security risk to make your WordPress version visible and public you should hide it.', 'wpto' );
 

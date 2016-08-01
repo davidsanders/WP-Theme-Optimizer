@@ -10,8 +10,6 @@ class WPTO_Remove_WLW_Manifest extends WPTO_Optimization_Base {
 
 	public function __construct() {
 
-		parent::__construct();
-
 		$this->title       = __( 'Remove wlwmanifest.xml', 'wpto' );
 		$this->description = __( 'If you are not using Windows Live Writer Manifest Link then disable it here.', 'wpto' );
 

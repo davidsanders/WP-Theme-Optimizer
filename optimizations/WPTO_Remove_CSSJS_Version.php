@@ -13,8 +13,6 @@ class WPTO_Remove_CSSJS_Version extends WPTO_Optimization_Base {
 		$this->title       = __( 'Remove CSS and JS versions', 'wpto' );
 		$this->description = __( 'Resources with a “?” or “&” in the URL can not always be cached correctly. Removing these query strings can improve the performance of your WordPress site.', 'wpto' );
 
-		parent::__construct();
-
 	}
 
 	/**

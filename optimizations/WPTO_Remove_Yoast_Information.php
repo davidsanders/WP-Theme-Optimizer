@@ -10,8 +10,6 @@ class WPTO_Remove_Yoast_Information extends WPTO_Optimization_Base {
 
 	public function __construct() {
 
-		parent::__construct();
-
 		$this->title       = __( 'Yoast Information', 'wpto' );
 		$this->description = __( 'xxx', 'wpto' );
 

@@ -8,16 +8,19 @@ abstract class WPTO_Optimization_Base extends WPTO_Base {
 	public $title;
 	public $description;
 
-	public function __construct() {
-
+	/*
+	 *
+	 */
+	public function optimize() {
 		$this->add_action( 'after_setup_theme' );
-
 	}
 
 	/*
 	 * Remove  CSS and JS query strings versions
 	 */
 	public function _after_setup_theme() {
+
+		echo '';
 
 	}
 

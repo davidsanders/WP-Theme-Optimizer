@@ -10,8 +10,6 @@ class WPTO_Remove_WP_Post_Links extends WPTO_Optimization_Base {
 
 	public function __construct() {
 
-		parent::__construct();
-
 		$this->title       = __( 'Remove Next/Previous Post Links', 'wpto' );
 		$this->description = __( 'If you do not need them, you can remove next and previous post links from the themes header by disabling them here.', 'wpto' );
 

@@ -13,8 +13,6 @@ class WPTO_Remove_Recent_Comments_CSS extends WPTO_Optimization_Base {
 		$this->title       = __( 'Remove WordPress Recent Comments inline styling CSS', 'wpto' );
 		$this->description = __( 'WordPress automatically adds an inline CSS style for recent comments. If you do not need this, remove it here.', 'wpto' );
 
-		parent::__construct();
-
 	}
 
 	/**

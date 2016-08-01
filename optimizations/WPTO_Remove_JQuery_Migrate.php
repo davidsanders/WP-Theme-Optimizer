@@ -13,8 +13,6 @@ class WPTO_Remove_JQuery_Migrate extends WPTO_Optimization_Base {
 		$this->title       = __( 'Remove jQuery Migrate', 'wpto' );
 		$this->description = __( 'Resources with a “?” or “&” in the URL can not always be cached correctly. Removing these query strings can improve the performance of your WordPress site.', 'wpto' );
 
-		parent::__construct();
-
 	}
 
 	/**

@@ -13,8 +13,6 @@ class WPTO_Remove_EMOJII_Release extends WPTO_Optimization_Base {
 		$this->title       = __( 'Remove emoji-release.js', 'wpto' );
 		$this->description = __( 'Are you using Emoji\'s on your website? If not, you can disable them here.', 'wpto' );
 
-		parent::__construct();
-
 	}
 
 	/**

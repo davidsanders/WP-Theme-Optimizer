@@ -116,7 +116,7 @@ class WPTO extends WPTO_Base {
 
 		}
 
-		$this->add_action( 'init', 11 );
+		$this->add_action( 'plugins_loaded', 11 );
 
 	}
 
@@ -148,9 +148,10 @@ class WPTO extends WPTO_Base {
 	/**
 	 * Load all optimizations
 	 */
-	public function _init() {
+	public function _plugins_loaded() {
 		$optimization_files = apply_filters( 'wpto_optimizations', glob( "{$this->dirpath}/optimizations/*.php" ) );
 		$categories = $this->categories();
+		$options = $this->options();
 		foreach( $optimization_files as $optimization_file ) {
 			require( $optimization_file );
 			$class_name = basename( $optimization_file, '.php' );
@@ -159,8 +160,16 @@ class WPTO extends WPTO_Base {
 				if ( isset( $categories[ $optimization_category ] ) ) {
 					$optimization_name                        = constant( "{$class_name}::NAME" );
 					$this->_optimizations[ $class_name ]      = $optimization_name;
-					$this->_categories[ $optimization_category ]
-						->optimizations[ $optimization_name ] = $class_name;
+					if ( ! isset( $options[ $optimization_name ] ) || 0 === $options[ $optimization_name ] ) {
+						$optimization = $class_name;
+					} else {
+						/**
+						 * @var WPTO_Optimization_Base $optimization
+						 */
+						$optimization = new $class_name();
+						$optimization->optimize();
+					}
+					$this->_categories[ $optimization_category ]->optimizations[ $optimization_name ] = $optimization;
 				}
 			}
 		}

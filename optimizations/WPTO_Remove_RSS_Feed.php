@@ -10,8 +10,6 @@ class WPTO_Remove_RSS_Feed extends WPTO_Optimization_Base {
 
 	public function __construct() {
 
-		parent::__construct();
-
 		$this->title       = __( 'Remove RSS Feeds', 'wpto' );
 		$this->description = __( 'Are you using RSS feeds? If not, you can turn them off here.', 'wpto' );
 

@@ -10,8 +10,6 @@ class WPTO_Remove_OEmbed extends WPTO_Optimization_Base {
 		$this->title       = __( 'Remove OEmbed Links', 'wpto' );
 		$this->description = __( 'OEmbed provides an easy way to embed content from one site to another. If you do not need it, disable it here.', 'wpto' );
 
-		parent::__construct();
-
 	}
 
 	/**

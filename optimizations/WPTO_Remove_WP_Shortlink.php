@@ -10,8 +10,6 @@ class WPTO_Remove_WP_Shortlink extends WPTO_Optimization_Base {
 
 	public function __construct() {
 
-		parent::__construct();
-
 		$this->title       = __( 'Remove WP Shortlink', 'wpto' );
 		$this->description = __( 'The shortlink is a shortened version of a web page’s URL. If you do not need it, you can disable it here.', 'wpto' );
 

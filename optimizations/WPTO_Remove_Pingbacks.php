@@ -10,8 +10,6 @@ class WPTO_Remove_Pingbacks extends WPTO_Optimization_Base {
 
 	public function __construct() {
 
-		parent::__construct();
-
 		$this->title       = __( 'xxx', 'wpto' );
 		$this->description = __( 'xxx', 'wpto' );
 

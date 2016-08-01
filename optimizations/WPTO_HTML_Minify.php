@@ -10,8 +10,6 @@ class WPTO_HTML_Minify extends WPTO_Optimization_Base {
 
 	public function __construct() {
 
-		parent::__construct();
-
 		$this->title       = __( 'Minify HTML', 'wpto' );
 		$this->description = __( 'Improve your site performance by Minifying the HTMl.', 'wpto' );
 
