@@ -24,33 +24,12 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-/**
- * The code that runs during plugin activation.
- * This action is documented in includes/class-wpto-activator.php
- */
-function activate_wpto() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-wpto-activator.php';
-	wpto_Activator::activate();
+spl_autoload_register( 'wpto_autoloader' );
+function wpto_autoloader( $class_name ) {
+	if ( is_file( $filepath = __DIR__ . "/includes/{$class_name}.php" ) ) {
+		require( $filepath );
+	}
 }
-
-/**
- * The code that runs during plugin deactivation.
- * This action is documented in includes/class-wpto-deactivator.php
- */
-function deactivate_wpto() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-wpto-deactivator.php';
-	wpto_Deactivator::deactivate();
-}
-
-register_activation_hook( __FILE__, 'activate_wpto' );
-register_deactivation_hook( __FILE__, 'deactivate_wpto' );
-
-/**
- * The core plugin class that is used to define internationalization,
- * admin-specific hooks, and public-facing site hooks.
- */
-require plugin_dir_path( __FILE__ ) . 'includes/class-wpto.php';
-
 
 /**
  * Begins execution of the plugin.
@@ -60,11 +39,14 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-wpto.php';
  * not affect the page life cycle.
  *
  * @since    1.0.0
+ *
+ * @return WPTO
  */
-function run_wpto() {
-
-	$plugin = new wpto();
-	$plugin->run();
-
+function wpto() {
+	static $wpto;
+	if ( ! isset( $wpto ) ) {
+		$wpto = new WPTO();
+	}
+	return $wpto;
 }
-run_wpto();
+wpto();
