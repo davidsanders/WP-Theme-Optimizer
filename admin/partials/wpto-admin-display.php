@@ -91,7 +91,7 @@
 		 require_once('wpto_theme_scripts.php');
 		 require_once('wpto_theme_links.php');
 		 require_once('wpto_misc.php');
-
+require_once('wpto_wc.php');
 			if ( class_exists( 'WooCommerce' ) ) {
 				require_once('wpto_wc.php');
 			}
