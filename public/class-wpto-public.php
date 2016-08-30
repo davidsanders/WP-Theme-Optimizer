@@ -210,7 +210,12 @@ add_action( 'widgets_init', 'remove_recent_comments_style' );
 		}
 	}
 
-
+	// Remove DNS Prefetch
+	public function wpto_remove_dns_prefetch( ) {
+		if(!empty($this->wpto_options['remove_dns_prefetch'])){
+		remove_action( 'wp_head', 'wp_resource_hints', 2 );
+		}
+	}
 /* WOOCOMMERCE
 
 // Open Public function

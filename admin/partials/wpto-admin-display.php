@@ -47,6 +47,7 @@
 			$remove_wp_shortlink = $options['remove_wp_shortlink'];
 			$remove_wp_post_links = $options['remove_wp_post_links'];
 			$remove_pingback = $options['remove_pingback'];
+			$remove_dns_prefetch = $options['remove_dns_prefetch'];
 
 
 		// Yoast Optimisations
