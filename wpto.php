@@ -10,7 +10,7 @@
  * Plugin Name:       WP Theme Optimizer
  * Plugin URI:        www.themeoptimizer.io
  * Description:       Optimize your WordPress theme header by removing excess tags and scripts. Make your site faster and more secure by hiding WordPress tags.
- * Version:           1.0.1
+ * Version:           1.1.2
  * Author:            Studio Touch (Daniel Hand)
  * Author URI:        https://www.designsbytouch.co.uk
  * License:           GPL-2.0+

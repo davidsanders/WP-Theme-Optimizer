@@ -3,8 +3,8 @@ Contributors: dsgnr
 Donate link: https://www.designsbytouch.co.uk
 Tags: theme, optimiser, optimizer, remove query strings from static resources, remove header information
 Requires at least: 3.0.1
-Tested up to:  4.5.3
-Stable tag: 4.5.3
+Tested up to:  4.6
+Stable tag: 4.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,12 +22,19 @@ Optimize your WordPress theme header by removing excess tags and scripts. Make y
 
 == Changelog ==
 
+= 1.1.2 =
+
+* Bug fixes.
+* Added removal of DNS prefetch.
+
+
 = 1.0.1 =
 
 * Fixed a few bugs and updated the documentation to make it clearer.
 * Reorganized tabs to make navigation easier.
 * Added activate/deactivate all button.
 * Changed spellings to be consistent between UK/US spellings.
+
 
 = 1.0.0 =
 
