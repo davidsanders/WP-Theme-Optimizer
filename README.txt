@@ -12,6 +12,24 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Optimize your WordPress theme header by removing excess tags and scripts. Make your site faster and more secure by hiding WordPress tags.
 
+### Features
+
+* Remove CSS and JS versions<br>
+* Remove WP Generator tag<br>
+* Remove OEmbed Links<br>
+* Remove jQuery Migrate<br>
+* Remove emoji-release.js<br>
+* Remove recent comments inline CSS<br>
+* Remove RSD Link<br>
+* Remove RSS feeds<br>
+* Remove wlwmanifest.xml<br>
+* Remove WP JSON link<br>
+* Remove WP Shortlink<br>
+* Remove Next/Previous post links<br>
+* Remove Yoast SEO comments in front-end HTML<br>
+* Option to Minify front-end HTML<br>
+* Remove DNS prefetch tags<br>
+
 
 == Installation ==
 
