@@ -52,4 +52,4 @@ I have enabled a simple checkbox for easy activation/deactivation of features. A
 Contributions are welcome from everyone. If this plugin is missing anything you'd like to see, or have found a bug please tell us!
 
 * <a href="https://github.com/dsgnr/WP-Theme-Optimizer/issues">Submit an issue</a>
-* <a href="mailto:email@danielhand.io">Email Us</a>
+* <a href="mailto:email@danielhand.io">Email me</a>
