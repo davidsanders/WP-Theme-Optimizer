@@ -21,7 +21,9 @@ If you're using Composer to manage WordPress, add WP Theme Optimizer to your pro
 composer require dsgnr/wp-theme-optimizer
 ```
 
-### How it works? I have enabled a simple checkbox for easy activation/deactivation of features. A small gif below:
+### How it works? 
+
+I have enabled a simple checkbox for easy activation/deactivation of features. A small gif below:
 
 ![WP Theme Optimizer animation](animation.gif)
 
