@@ -11,7 +11,7 @@ This WordPress plugin allows you to optimize your WordPress theme header by remo
 
 ## Installation
 
-You can install this plugin via the command-line or the WordPress admin panel.
+Either download this repository from Github and upload it to your 'plugins' folder via FTP, or go to the WordPress repository and download direct from your dashboard, <a href="https://en-gb.wordpress.org/plugins/wp-theme-optimizer/">here</a>
 
 ### via Command-line
 
@@ -21,9 +21,10 @@ If you're using Composer to manage WordPress, add WP Theme Optimizer to your pro
 composer require dsgnr/wp-theme-optimizer
 ```
 
-### via WP Dashboard
+### How it works? I have enabled a simple checkbox for easy activation/deactivation of features. A small gif below:
 
-This plugin is currently in the list to be approved for the WordPress plugin repository.
+![WP Theme Optimizer animation](animation.gif)
+
 
 ### Features
 
